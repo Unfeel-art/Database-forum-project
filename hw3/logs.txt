@@ -1,0 +1,160 @@
+MariaDB [db_achernii]> /* Q1: Get the most active users (by number of posts) */
+MariaDB [db_achernii]> SELECT u.user_id, u.username, COUNT(p.post_id)
+    -> FROM Users u
+    -> JOIN Posts p ON u.user_id = p.user_id
+    -> GROUP BY u.user_id, u.username
+    -> ORDER BY COUNT(p.post_id) DESC;
+r_id, u.username+---------+----------+------------------+
+| user_id | username | COUNT(p.post_id) |
++---------+----------+------------------+
+|       3 | javidan  |                2 |
+|       4 | alice    |                2 |
+|       1 | temo     |                1 |
+|       6 | carol    |                1 |
+|       5 | bob      |                1 |
+|       2 | artem    |                1 |
++---------+----------+------------------+
+6 rows in set (0.000 sec)
+
+MariaDB [db_achernii]>
+MariaDB [db_achernii]> /* Q2: Get the most active users (by number of votes) */
+MariaDB [db_achernii]> SELECT u.user_id, u.username, COUNT(r.action_id)
+    -> FROM Users u
+    -> JOIN Posts p ON u.user_id = p.user_id
+    -> JOIN Targets tg ON p.post_id = tg.post_id
+    -> JOIN Reactions r ON tg.action_id = r.action_id
+    -> GROUP BY u.user_id, u.username
+    -> ORDER BY COUNT(r.action_id) DESC;
+ with their auth+---------+----------+--------------------+
+| user_id | username | COUNT(r.action_id) |
++---------+----------+--------------------+
+|       5 | bob      |                  2 |
+|       4 | alice    |                  2 |
+|       2 | artem    |                  1 |
++---------+----------+--------------------+
+3 rows in set (0.000 sec)
+
+MariaDB [db_achernii]>
+MariaDB [db_achernii]> /* Q3: Get all threads of a specific category with their authors */
+MariaDB [db_achernii]> SELECT t.post_id, t.title, u.username
+    -> FROM Threads t
+    -> JOIN Posts p ON t.post_id = p.post_id
+    -> JOIN Users u ON p.user_id = u.user_id
+    -> JOIN Contains con ON con.thread_post_id = t.post_id
+    -> JOIN Categories c ON c.category_id = con.category_id
+/* Q4: Get post     -> WHERE c.name = 'Programming';
++---------+---------------------+----------+
+| post_id | title               | username |
++---------+---------------------+----------+
+|       2 | Python Projects     | artem    |
+|       3 | Forum Rules         | javidan  |
+|       4 | JS Framework Debate | alice    |
++---------+---------------------+----------+
+3 rows in set (0.000 sec)
+
+MariaDB [db_achernii]>
+MariaDB [db_achernii]> /* Q4: Get post ids with reports exceeding a threshold */
+MariaDB [db_achernii]> SELECT tg.post_id, COUNT(r.action_id)
+    -> FROM Reports r
+    -> JOIN Targets tg ON r.action_id = tg.action_id
+    -> GROUP BY tg.post_id
+    -> HAVING COUNT(r.action_id) > 0
+    -> ORDER BY COUNT(r.action_id) DESC;
+shold */
+SELECT +---------+--------------------+
+| post_id | COUNT(r.action_id) |
++---------+--------------------+
+|       2 |                  2 |
+|       4 |                  2 |
++---------+--------------------+
+2 rows in set (0.000 sec)
+
+MariaDB [db_achernii]>
+MariaDB [db_achernii]> /* Q5: Get users with reports exceeding a threshold */
+MariaDB [db_achernii]> SELECT u.user_id, u.username, COUNT(r.action_id)
+    -> FROM Users u
+    -> JOIN Posts p ON u.user_id = p.user_id
+    -> JOIN Targets tg ON p.post_id = tg.post_id
+    -> JOIN Reports r ON tg.action_id = r.action_id
+    -> GROUP BY u.user_id, u.username
+    -> HAVING COUNT(r.action_id) > 0
+    -> ORDER BY COUNT(r.action_id) DESC;
++---------+----------+--------------------+
+| user_id | username | COUNT(r.action_id) |
++---------+----------+--------------------+
+|       2 | artem    |                  2 |
+|       4 | alice    |                  2 |
++---------+----------+--------------------+
+2 rows in set (0.000 sec)
+
+MariaDB [db_achernii]>
+MariaDB [db_achernii]> /* Q6: Get the most loved threads (by upvotes) */
+MariaDB [db_achernii]> SELECT t.post_id, t.title, COUNT(r.action_id)
+    -> FROM Threads t
+    -> JOIN Contains con ON con.thread_post_id = t.post_id
+    -> JOIN Categories c ON c.category_id = con.category_id
+    -> JOIN Targets tg ON tg.post_id = t.post_id
+    -> JOIN Reactions r ON r.action_id = tg.action_id
+    -> WHERE r.reaction_type = 'up'
+    -> GROUP BY t.post_id, t.title
+    -> ORDER BY COUNT(r.action_id) DESC;
++---------+---------------------+--------------------+
+| post_id | title               | COUNT(r.action_id) |
++---------+---------------------+--------------------+
+|       4 | JS Framework Debate |                  2 |
+|       5 | Gaming News         |                  2 |
++---------+---------------------+--------------------+
+2 rows in set (0.000 sec)
+
+MariaDB [db_achernii]>
+MariaDB [db_achernii]> /* Q7: Get the most loved threads of a specific category */
+MariaDB [db_achernii]> SELECT t.post_id, t.title, COUNT(r.action_id)
+    -> FROM Threads t
+    -> JOIN Posts p ON t.post_id = p.post_id
+    -> JOIN Users u ON p.user_id = u.user_id
+.category_id = c    -> JOIN Contains con ON con.thread_post_id = t.post_id
+    -> JOIN Categories c ON c.category_id = con.category_id
+action_id = r.ac    -> JOIN Targets tg ON t.post_id = tg.post_id
+    -> JOIN Reactions r ON tg.action_id = r.action_id
+    -> WHERE r.reaction_type = 'up' AND c.name = 'Programming'
+    -> GROUP BY t.post_id, t.title, u.username
+    -> ORDER BY COUNT(r.action_id) DESC;
++---------+---------------------+--------------------+
+| post_id | title               | COUNT(r.action_id) |
++---------+---------------------+--------------------+
+|       4 | JS Framework Debate |                  2 |
++---------+---------------------+--------------------+
+1 row in set (0.000 sec)
+
+MariaDB [db_achernii]>
+MariaDB [db_achernii]> /* Q8: Get categories with the most threads */
+MariaDB [db_achernii]> SELECT c.category_id, c.name, COUNT(t.post_id)
+    -> FROM Categories c
+    -> JOIN Contains con ON c.category_id = con.category_id
+    -> JOIN Threads t ON con.thread_post_id = t.post_id
+    -> GROUP BY c.category_id, c.name
+    -> ORDER BY COUNT(t.post_id) DESC;
+ELECT t.title
+FR+-------------+---------------+------------------+
+| category_id | name          | COUNT(t.post_id) |
++-------------+---------------+------------------+
+|           3 | Programming   |                3 |
+|           2 | General       |                1 |
+|           1 | Announcements |                1 |
++-------------+---------------+------------------+
+3 rows in set (0.000 sec)
+
+MariaDB [db_achernii]>
+MariaDB [db_achernii]> /* Q9: Get threads with no replies or votes*/
+MariaDB [db_achernii]> SELECT t.title
+    -> FROM Threads t
+    -> LEFT JOIN Replies rp ON rp.reply_post_id = t.post_id
+    -> LEFT JOIN Targets tg ON tg.post_id = t.post_id
+    -> LEFT JOIN Reactions r ON r.action_id = tg.action_id
+    -> WHERE rp.post_id IS NULL AND r.action_id IS NULL;
++-------------+
+| title       |
++-------------+
+| Forum Rules |
++-------------+
+1 row in set (0.000 sec)

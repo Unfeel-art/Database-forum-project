@@ -28,7 +28,7 @@ SELECT tg.post_id, COUNT(r.action_id)
 FROM Reports r
 JOIN Targets tg ON r.action_id = tg.action_id
 GROUP BY tg.post_id
-HAVING COUNT(r.action_id) > 10
+HAVING COUNT(r.action_id) > 0
 ORDER BY COUNT(r.action_id) DESC;
 
 /* Q5: Get users with reports exceeding a threshold */
@@ -38,7 +38,7 @@ JOIN Posts p ON u.user_id = p.user_id
 JOIN Targets tg ON p.post_id = tg.post_id
 JOIN Reports r ON tg.action_id = r.action_id
 GROUP BY u.user_id, u.username
-HAVING COUNT(r.action_id) > 10
+HAVING COUNT(r.action_id) > 0
 ORDER BY COUNT(r.action_id) DESC;
 
 /* Q6: Get the most loved threads (by upvotes) */
@@ -48,7 +48,7 @@ JOIN Contains con ON con.thread_post_id = t.post_id
 JOIN Categories c ON c.category_id = con.category_id
 JOIN Targets tg ON tg.post_id = t.post_id
 JOIN Reactions r ON r.action_id = tg.action_id
-WHERE r.reaction_type = 'up' AND c.name = 'Programming'
+WHERE r.reaction_type = 'up'
 GROUP BY t.post_id, t.title
 ORDER BY COUNT(r.action_id) DESC;
 
