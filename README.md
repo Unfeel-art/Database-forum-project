@@ -1,5 +1,8 @@
 # Database Forum Project
 
+## Website link
+http://10.60.36.1/~achernii/index.html
+
 ## Course Information
 
 - **Course Title**: Databases (CO-560)
@@ -30,5 +33,14 @@ Database-forum-project/
 │   ├── logs.txt                      Logs of the queries
 │   ├── queries.sql                   SQL select queries 
 │   └── sample.sql                    Sample data to test queries
+├── hw4/                           Homework Assignment 4
+│   ├── public_html/                  Website front folder
+│   │   ├── css/                         CSS folder
+│   │   │   └── style.css                   Main CSS file
+│   │   ├── img/                         Image folder
+│   │   │   └── logo.png                    Logo
+│   │   ├── imprint.html                 Imprint page
+│   │   └── index.html                   Main page
+│   └── Forum_CD.pdf                  Corporate Design
 └── README.md                      This README file
 ```
