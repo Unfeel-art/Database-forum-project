@@ -6,6 +6,10 @@
     <link rel="stylesheet" type="text/css" href="../css/style.css">
     <link rel="icon" href="../img/logo.png" type="image/png">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <script>
+        const theme = localStorage.getItem('theme') || 'dark';
+        document.documentElement.setAttribute('data-theme', theme);
+    </script>
 </head>
 <body>
     <header>
@@ -85,5 +89,36 @@
     </footer>
     
     <script src="../js/theme.js"></script>
+    <script>   
+        const form = document.getElementById('addForm');
+
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const name  = document.getElementById('title').value.trim();
+            const description = document.getElementById('description').value.trim();
+
+            const formData = {
+                name  : name,
+                description : description
+            };
+
+            try {
+                const res = await fetch('/~achernii/api/index.php?table=Categories', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(formData)
+                });
+                const data = await res.json();
+                if (!res.ok) {
+                    window.location.href = `feedback.html?status=error&message=${encodeURIComponent(data.error || 'Error creating Category!')}`;
+                    return;
+                }
+
+                window.location.href = `feedback.html?status=success&message=${encodeURIComponent('Category added successfully!')}&id=${data.id}`;
+            } catch (err) {
+                window.location.href = `feedback.html?status=error&message=${encodeURIComponent('Failed to send request!')}`;
+            }
+        });
+    </script>
 </body>
 </html>

@@ -6,6 +6,10 @@
     <link rel="stylesheet" type="text/css" href="../css/style.css">
     <link rel="icon" href="../img/logo.png" type="image/png">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <script>
+        const theme = localStorage.getItem('theme') || 'dark';
+        document.documentElement.setAttribute('data-theme', theme);
+    </script>
 </head>
 <body>
     <header>
@@ -88,5 +92,87 @@
     </footer>
     
     <script src="../js/theme.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const postSelect = document.getElementById('post');
+            fetch('/~achernii/api/index.php?table=Posts')
+                .then(res => res.json())
+                .then(data => {
+                    postSelect.innerHTML = '';
+                    data.forEach(post => {
+                        const option = document.createElement('option');
+                        option.value = post.post_id;
+                        option.textContent = post.post_id;
+                        postSelect.appendChild(option);
+                    });
+                })
+                .catch(err => {
+                    postSelect.innerHTML = '<option value="">Failed to load</option>';
+                });
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const authorSelect = document.getElementById('author');
+            fetch('/~achernii/api/index.php?table=Users')
+                .then(res => res.json())
+                .then(data => {
+                    authorSelect.innerHTML = '';
+                    data.forEach(author => {
+                        const option = document.createElement('option');
+                        option.value = author.user_id;
+                        option.textContent = author.username;
+                        authorSelect.appendChild(option);
+                    });
+                })
+                .catch(err => {
+                    authorSelect.innerHTML = '<option value="">Failed to load</option>';
+                });
+        });
+    </script>
+    <script>
+        const form = document.getElementById('addForm');
+
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const content_body  = document.getElementById('content').value.trim();
+            const user_id  = document.getElementById('author').value
+            const reply_post_id = document.getElementById('post').value;
+
+            const formData = {
+                content_body : content_body,
+                user_id : user_id,
+            };
+
+            try {
+                const res = await fetch('/~achernii/api/index.php?table=Posts', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(formData)
+                });
+
+                const data = await res.json();
+                if (!res.ok || !data.id) {
+                    window.location.href = `feedback.html?status=error&message=${encodeURIComponent(data.error || 'Error creating Post!')}`;
+                    return;
+                }
+
+                const res2 = await fetch('/~achernii/api/index.php?table=Replies', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ post_id : data.id, reply_post_id : reply_post_id })
+                });
+                const data2 = await res2.json();
+                if (!res2.ok) {
+                    window.location.href = `feedback.html?status=error&message=${encodeURIComponent(data2.error || 'Error creating Reply!')}`;
+                    return;
+                }
+                
+                window.location.href = `feedback.html?status=success&message=${encodeURIComponent('Reply added successfully!')}&id=${data.id}`;
+            } catch (err) {
+                window.location.href = `feedback.html?status=error&message=${encodeURIComponent('Failed to send request!')}`;
+            }
+        });
+    </script>
 </body>
 </html>
