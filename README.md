@@ -1,5 +1,9 @@
 # Database Forum Project
 
+## Website link
+
+http://10.60.36.1/~achernii/index.html
+
 ## Course Information
 
 - **Course Title**: Databases (CO-560)
@@ -30,5 +34,10 @@ Database-forum-project/
 │   ├── logs.txt                      Logs of the queries
 │   ├── queries.sql                   SQL select queries 
 │   └── sample.sql                    Sample data to test queries
+├── hw4/                           Homework Assignment 4
+│   ├── public_html/                  Website source files
+│   └── Forum_CD.pdf                  Corporate Design
+├── hw5/                           Homework Assignment 5
+│   ├── public_html                   Website source files
 └── README.md                      This README file
 ```
