@@ -89,6 +89,10 @@
                 .then(res => res.json())
                 .then(data => {
                     actionSelect.innerHTML = '';
+                    if (data.length === 0) {
+                        actionSelect.innerHTML = '<option value="">No options</option>';
+                        return;
+                    }
                     data.forEach(action => {
                         const option = document.createElement('option');
                         option.value = action.action_id;
@@ -108,6 +112,10 @@
                 .then(res => res.json())
                 .then(data => {
                     postSelect.innerHTML = '';
+                    if (data.length === 0) {
+                        postSelect.innerHTML = '<option value="">No options</option>';
+                        return;
+                    }
                     data.forEach(post => {
                         const option = document.createElement('option');
                         option.value = post.post_id;
@@ -142,6 +150,7 @@
 
                 if (!res.ok) {
                     window.location.href = `feedback.html?status=error&message=${encodeURIComponent(data.error || 'Error creating Targets relation!')}`;
+                    return;
                 }
                 window.location.href = `feedback.html?status=success&message=${encodeURIComponent('Targets relation added successfully!')}`;
             } catch (err) {

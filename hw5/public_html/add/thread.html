@@ -103,6 +103,10 @@
                 .then(res => res.json())
                 .then(data => {
                     authorSelect.innerHTML = '';
+                    if (data.length === 0) {
+                        authorSelect.innerHTML = '<option value="">No options</option>';
+                        return;
+                    }
                     data.forEach(author => {
                         const option = document.createElement('option');
                         option.value = author.user_id;

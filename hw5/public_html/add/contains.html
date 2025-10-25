@@ -89,6 +89,10 @@
                 .then(res => res.json())
                 .then(data => {
                     categorySelect.innerHTML = '';
+                    if (data.length === 0) {
+                        categorySelect.innerHTML = '<option value="">No options</option>';
+                        return;
+                    }
                     data.forEach(category => {
                         const option = document.createElement('option');
                         option.value = category.category_id;
@@ -108,6 +112,10 @@
                 .then(res => res.json())
                 .then(data => {
                     threadSelect.innerHTML = '';
+                    if (data.length === 0) {
+                        threadSelect.innerHTML = '<option value="">No options</option>';
+                        return;
+                    }
                     data.forEach(thread => {
                         const option = document.createElement('option');
                         option.value = thread.post_id;

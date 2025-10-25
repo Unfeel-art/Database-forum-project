@@ -99,6 +99,10 @@
                 .then(res => res.json())
                 .then(data => {
                     postSelect.innerHTML = '';
+                    if (data.length === 0) {
+                        postSelect.innerHTML = '<option value="">No options</option>';
+                        return;
+                    }
                     data.forEach(post => {
                         const option = document.createElement('option');
                         option.value = post.post_id;
@@ -118,6 +122,10 @@
                 .then(res => res.json())
                 .then(data => {
                     authorSelect.innerHTML = '';
+                    if (data.length === 0) {
+                        authorSelect.innerHTML = '<option value="">No options</option>';
+                        return;
+                    }
                     data.forEach(author => {
                         const option = document.createElement('option');
                         option.value = author.user_id;
