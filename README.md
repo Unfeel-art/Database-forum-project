@@ -39,5 +39,7 @@ Database-forum-project/
 │   └── Forum_CD.pdf                  Corporate Design
 ├── hw5/                           Homework Assignment 5
 │   ├── public_html                   Website source files
+├── hw6/                           Homework Assignment 6
+│   ├── public_html                   Website source files
 └── README.md                      This README file
 ```
