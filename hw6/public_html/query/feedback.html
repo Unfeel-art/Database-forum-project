@@ -99,32 +99,42 @@
                 }
                 const queryResults = query.data;
                 const queryType = query.query;
-                console.log(query);
-                console.log(queryResults);
-                console.log(queryType);
                 let res = '<div class="results-list">';
                 queryResults.forEach(queryResult => {
+                    let entity = 'Threads';
+                    let additionalInfo = {};
+
                     if (queryType === 'threads_by_category') {
+                        additionalInfo = `query=${encodeURIComponent("Threads by Category")}&category=${encodeURIComponent(queryResult.category_name)}&author=${encodeURIComponent(queryResult.username)}`;
                         res += `
+                            <a href="entity_description.html?entity=${entity}&id=${queryResult.post_id}&${additionalInfo}">
                             <div class="result-card">
                                 <div class="result-title">ID: ${queryResult.post_id}</div>
                                 <div class="result-info">
                                     <p>Thread title: ${queryResult.title}</p>
+                                    <p>Category: ${queryResult.category_name}</p>
                                     <p>Author: ${queryResult.username}</p>
                                 </div>
                             </div>
+                            </a>
                         `;
                     } else if (queryType === 'reported_posts') {
+                        entity = 'Posts';
+                        additionalInfo = `query=${encodeURIComponent('Reported Posts')}&report_count=${encodeURIComponent(queryResult.report_count)}`;
                         res += `
+                            <a href="entity_description.html?entity=${entity}&id=${queryResult.post_id}&${additionalInfo}">
                             <div class="result-card">
                                 <div class="result-title">ID: ${queryResult.post_id}</div>
                                 <div class="result-info">
                                     <p>Reports count: ${queryResult.report_count}</p>
                                 </div>
                             </div>
+                            </a>
                         `;
                     } else if (queryType === 'most_liked_threads') {
+                        additionalInfo = `query=${encodeURIComponent('Most Liked Threads')}&upvote_count=${encodeURIComponent(queryResult.upvote_count)}`;
                         res += `
+                            <a href="entity_description.html?entity=${entity}&id=${queryResult.post_id}&${additionalInfo}">
                             <div class="result-card">
                                 <div class="result-title">ID: ${queryResult.post_id}</div>
                                 <div class="result-info">
@@ -132,6 +142,7 @@
                                     <p>Upvotes count: ${queryResult.upvote_count}</p>
                                 </div>
                             </div>
+                            </a>
                         `;
                     } else {
                         res += `

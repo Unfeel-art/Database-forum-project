@@ -17,7 +17,7 @@ $threshold = (int)($_GET['threshold'] ?? 0);
 
 switch ($query) {
     case 'threads_by_category':
-        $sql = "SELECT t.post_id, t.title, u.username
+        $sql = "SELECT t.post_id, t.title, u.username, c.name as category_name
                 FROM Threads t
                 JOIN Posts p ON t.post_id = p.post_id
                 JOIN Users u ON p.user_id = u.user_id

@@ -20,11 +20,24 @@ if (!in_array($table, $allowedTables, true)) {
     http_response_code(400);
     die(json_encode(['error' => 'Invalid table']));
 }
-
+$primaryKeys = [
+    'Users' => 'user_id',
+    'Moderators' => 'user_id',
+    'RegularUsers' => 'user_id',
+    'Posts' => 'post_id',
+    'Threads' => 'post_id',
+    'Replies' => 'post_id',
+    'Categories' => 'category_id',
+    'Actions' => 'action_id',
+    'Reactions' => 'action_id',
+    'Reports' => 'action_id',
+    'Targets' => 'action_id'
+];
 switch ($method) {
     case 'GET':
         if ($id) {
-            $stmt = $conn->prepare("SELECT * FROM $table WHERE id = ?");
+            $idKey = $primaryKeys[$table] ?? 'id';
+            $stmt = $conn->prepare("SELECT * FROM $table WHERE $idKey = ?");
             $stmt->bind_param('i', $id);
             $stmt->execute();
             $res = $stmt->get_result();
