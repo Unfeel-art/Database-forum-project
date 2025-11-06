@@ -1,0 +1,155 @@
+<?php require_once '../api/check_signin.php'; ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Forum</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="icon" href="../img/logo.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <script>
+        const theme = localStorage.getItem('theme') || 'dark';
+        document.documentElement.setAttribute('data-theme', theme);
+    </script>
+</head>
+<body>
+    <header>
+        <div class="base-div">
+            <a href="../index.html">
+                <div class="logo">
+                    <img src="../img/logo.png" class="logo-img">
+                    <h1>Forum</h1>
+                </div>
+            </a>
+            <nav>
+                <a href="../index.html">Home</a>
+                <a href="../index.html#categories">Categories</a>
+                <a href="../index.html#threads">Threads</a>
+                <a href="../imprint.html">Imprint</a>
+                <a href="../maintenance.php">Maintenance</a>
+                <a href="../queries.html">Queries</a>
+            </nav>
+            <div class="header-btn">
+                <button id="theme-btn" class="theme-btn">
+                    <span class="theme-icon">◐</span>
+                </button>
+                <a href="../signin.html" class="btn-same">Sign In</a>
+                <a href="#signup" class="btn-rev">Sign Up</a>
+            </div>
+        </div>
+    </header>
+    
+    <main class="form-page">
+        <div class="base-div">
+            <h2>Add Reaction</h2>
+            <div class="form-box">
+                <form id="addForm">
+                    <div class="form-field">
+                        <label for="user">Select User</label>
+                        <select id="user" name="user" required>
+                            <option value="">Loading...</option>
+                        </select>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="reaction">Select Reaction Type</label>
+                        <select id="reaction" name="reaction" required>
+                            <option value="up">Upvote</option>
+                            <option value="down">Downvote</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-btn">
+                        <a href="../maintenance.php" class="form-cancel-btn">Cancel</a>
+                        <button type="submit" class="form-add-btn">Add</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="base-div">
+            <nav>
+                <a href="../index.html">Home</a>
+                <a href="../index.html#categories">Categories</a>
+                <a href="../index.html#threads">Threads</a>
+                <a href="../imprint.html">Imprint</a>
+                <a href="../maintenance.php">Maintenance</a>
+                <a href="../queries.html">Queries</a>
+            </nav>
+            <div class="footer-btn">
+                <a href="../signin.html" class="btn-same">Sign In</a>
+                <a href="#signup" class="btn-rev">Sign Up</a>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="../js/theme.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const userSelect = document.getElementById('user');
+            fetch('/~achernii/api/index.php?table=Users')
+                .then(res => res.json())
+                .then(data => {
+                    userSelect.innerHTML = '';
+                    if (data.length === 0) {
+                        userSelect.innerHTML = '<option value="">No options</option>';
+                        return;
+                    }
+                    data.forEach(user => {
+                        const option = document.createElement('option');
+                        option.value = user.user_id;
+                        option.textContent = user.username;
+                        userSelect.appendChild(option);
+                    });
+                })
+                .catch(err => {
+                    userSelect.innerHTML = '<option value="">Failed to load</option>';
+                });
+        });
+    </script>
+    <script>
+        const form = document.getElementById('addForm');
+
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const user_id = document.getElementById('user').value;
+            const reaction_type = document.getElementById('reaction').value;
+
+            const formData = {
+                user_id : user_id,
+            };
+
+            try {
+                const res = await fetch('/~achernii/api/index.php?table=Actions', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(formData)
+                });
+
+                const data = await res.json();
+                if (!res.ok || !data.id) {
+                    window.location.href = `feedback.php?status=error&message=${encodeURIComponent(data.error || 'Error creating Action!')}`;
+                    return;
+                }
+
+                const res2 = await fetch('/~achernii/api/index.php?table=Reactions', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ action_id : data.id, reaction_type : reaction_type })
+                });
+                const data2 = await res2.json();
+                if (!res2.ok) {
+                    window.location.href = `feedback.php?status=error&message=${encodeURIComponent(data2.error || 'Error creating Reaction!')}`;
+                    return;
+                }
+                
+                window.location.href = `feedback.php?status=success&message=${encodeURIComponent('Reaction added successfully!')}&id=${data.id}`;
+            } catch (err) {
+                window.location.href = `feedback.php?status=error&message=${encodeURIComponent('Failed to send request!')}`;
+            }
+        });
+    </script>
+</body>
+</html>

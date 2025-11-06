@@ -1,0 +1,165 @@
+<?php require_once '../api/check_signin.php'; ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Forum</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="icon" href="../img/logo.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <script>
+        const theme = localStorage.getItem('theme') || 'dark';
+        document.documentElement.setAttribute('data-theme', theme);
+    </script>
+</head>
+<body>
+    <header>
+        <div class="base-div">
+            <a href="../index.html">
+                <div class="logo">
+                    <img src="../img/logo.png" class="logo-img">
+                    <h1>Forum</h1>
+                </div>
+            </a>
+            <nav>
+                <a href="../index.html">Home</a>
+                <a href="../index.html#categories">Categories</a>
+                <a href="../index.html#threads">Threads</a>
+                <a href="../imprint.html">Imprint</a>
+                <a href="../maintenance.php">Maintenance</a>
+                <a href="../queries.html">Queries</a>
+            </nav>
+            <div class="header-btn">
+                <button id="theme-btn" class="theme-btn">
+                    <span class="theme-icon">◐</span>
+                </button>
+                <a href="../signin.html" class="btn-same">Sign In</a>
+                <a href="#signup" class="btn-rev">Sign Up</a>
+            </div>
+        </div>
+    </header>
+    
+    <main class="form-page">
+        <div class="base-div">
+            <h2>Add Contains Relation</h2>
+            <div class="form-box">
+                <form id="addForm">
+                    <div class="form-field">
+                        <label for="category">Select Category</label>
+                        <select id="category" name="category" required>
+                            <option value="">Loading...</option>
+                        </select>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="thread">Select Thread</label>
+                        <select id="thread" name="thread" required>
+                            <option value="">Loading...</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-btn">
+                        <a href="../maintenance.php" class="form-cancel-btn">Cancel</a>
+                        <button type="submit" class="form-add-btn">Add</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+<div class="base-div">
+            <nav>
+                <a href="../index.html">Home</a>
+                <a href="../index.html#categories">Categories</a>
+                <a href="../index.html#threads">Threads</a>
+                <a href="../imprint.html">Imprint</a>
+                <a href="../maintenance.php">Maintenance</a>
+                <a href="../queries.html">Queries</a>
+            </nav>
+            <div class="footer-btn">
+                <a href="../signin.html" class="btn-same">Sign In</a>
+                <a href="#signup" class="btn-rev">Sign Up</a>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="../js/theme.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const categorySelect = document.getElementById('category');
+            fetch('/~achernii/api/index.php?table=Categories')
+                .then(res => res.json())
+                .then(data => {
+                    categorySelect.innerHTML = '';
+                    if (data.length === 0) {
+                        categorySelect.innerHTML = '<option value="">No options</option>';
+                        return;
+                    }
+                    data.forEach(category => {
+                        const option = document.createElement('option');
+                        option.value = category.category_id;
+                        option.textContent = category.name;
+                        categorySelect.appendChild(option);
+                    });
+                })
+                .catch(err => {
+                    categorySelect.innerHTML = '<option value="">Failed to load</option>';
+                });
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const threadSelect = document.getElementById('thread');
+            fetch('/~achernii/api/index.php?table=Threads')
+                .then(res => res.json())
+                .then(data => {
+                    threadSelect.innerHTML = '';
+                    if (data.length === 0) {
+                        threadSelect.innerHTML = '<option value="">No options</option>';
+                        return;
+                    }
+                    data.forEach(thread => {
+                        const option = document.createElement('option');
+                        option.value = thread.post_id;
+                        option.textContent = thread.title;
+                        threadSelect.appendChild(option);
+                    });
+                })
+                .catch(err => {
+                    threadSelect.innerHTML = '<option value="">Failed to load</option>';
+                });
+        });
+    </script>
+    <script>
+        const form = document.getElementById('addForm');
+
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            const formData = {
+                category_id: document.getElementById('category').value,
+                thread_post_id: document.getElementById('thread').value,
+            };
+
+            try {
+                const res = await fetch('/~achernii/api/index.php?table=Contains', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(formData)
+                });
+
+                const data = await res.json();
+
+               if (!res.ok) {
+                    window.location.href = `feedback.php?status=error&message=${encodeURIComponent(data.error || 'Error creating Contains relation!')}`;
+                    return;
+                }
+                window.location.href = `feedback.php?status=success&message=${encodeURIComponent('Contains relation added successfully!')}`;
+            } catch (err) {
+                window.location.href = `feedback.php?status=error&message=${encodeURIComponent('Failed to send request!')}`;
+            }
+        });
+    </script>
+</body>
+</html>

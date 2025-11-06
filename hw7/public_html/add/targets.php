@@ -1,0 +1,165 @@
+<?php require_once '../api/check_signin.php'; ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Forum</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="icon" href="../img/logo.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <script>
+        const theme = localStorage.getItem('theme') || 'dark';
+        document.documentElement.setAttribute('data-theme', theme);
+    </script>
+</head>
+<body>
+    <header>
+        <div class="base-div">
+            <a href="../index.html">
+                <div class="logo">
+                    <img src="../img/logo.png" class="logo-img">
+                    <h1>Forum</h1>
+                </div>
+            </a>
+            <nav>
+                <a href="../index.html">Home</a>
+                <a href="../index.html#categories">Categories</a>
+                <a href="../index.html#threads">Threads</a>
+                <a href="../imprint.html">Imprint</a>
+                <a href="../maintenance.php">Maintenance</a>
+                <a href="../queries.html">Queries</a>
+            </nav>
+            <div class="header-btn">
+                <button id="theme-btn" class="theme-btn">
+                    <span class="theme-icon">◐</span>
+                </button>
+                <a href="../signin.html" class="btn-same">Sign In</a>
+                <a href="#signup" class="btn-rev">Sign Up</a>
+            </div>
+        </div>
+    </header>
+    
+    <main class="form-page">
+        <div class="base-div">
+            <h2>Add Reaction</h2>
+            <div class="form-box">
+                <form id="addForm">
+                    <div class="form-field">
+                        <label for="action">Select Action</label>
+                        <select id="action" name="action" required>
+                            <option value="">Loading...</option>
+                        </select>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="post">Select Post</label>
+                        <select id="post" name="post" required>
+                            <option value="">Loading...</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-btn">
+                        <a href="../maintenance.php" class="form-cancel-btn">Cancel</a>
+                        <button type="submit" class="form-add-btn">Add</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="base-div">
+            <nav>
+                <a href="../index.html">Home</a>
+                <a href="../index.html#categories">Categories</a>
+                <a href="../index.html#threads">Threads</a>
+                <a href="../imprint.html">Imprint</a>
+                <a href="../maintenance.php">Maintenance</a>
+                <a href="../queries.html">Queries</a>
+            </nav>
+            <div class="footer-btn">
+                <a href="../signin.html" class="btn-same">Sign In</a>
+                <a href="#signup" class="btn-rev">Sign Up</a>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="../js/theme.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const actionSelect = document.getElementById('action');
+            fetch('/~achernii/api/index.php?table=Actions')
+                .then(res => res.json())
+                .then(data => {
+                    actionSelect.innerHTML = '';
+                    if (data.length === 0) {
+                        actionSelect.innerHTML = '<option value="">No options</option>';
+                        return;
+                    }
+                    data.forEach(action => {
+                        const option = document.createElement('option');
+                        option.value = action.action_id;
+                        option.textContent = action.action_id;
+                        actionSelect.appendChild(option);
+                    });
+                })
+                .catch(err => {
+                    actionSelect.innerHTML = '<option value="">Failed to load</option>';
+                });
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const postSelect = document.getElementById('post');
+            fetch('/~achernii/api/index.php?table=Posts')
+                .then(res => res.json())
+                .then(data => {
+                    postSelect.innerHTML = '';
+                    if (data.length === 0) {
+                        postSelect.innerHTML = '<option value="">No options</option>';
+                        return;
+                    }
+                    data.forEach(post => {
+                        const option = document.createElement('option');
+                        option.value = post.post_id;
+                        option.textContent = post.post_id;
+                        postSelect.appendChild(option);
+                    });
+                })
+                .catch(err => {
+                    postSelect.innerHTML = '<option value="">Failed to load</option>';
+                });
+        });
+    </script>
+    <script>
+        const form = document.getElementById('addForm');
+
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            const formData = {
+                action_id: document.getElementById('action').value,
+                post_id: document.getElementById('post').value,
+            };
+
+            try {
+                const res = await fetch('/~achernii/api/index.php?table=Targets', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(formData)
+                });
+
+                const data = await res.json();
+
+                if (!res.ok) {
+                    window.location.href = `feedback.php?status=error&message=${encodeURIComponent(data.error || 'Error creating Targets relation!')}`;
+                    return;
+                }
+                window.location.href = `feedback.php?status=success&message=${encodeURIComponent('Targets relation added successfully!')}`;
+            } catch (err) {
+                window.location.href = `feedback.php?status=error&message=${encodeURIComponent('Failed to send request!')}`;
+            }
+        });
+    </script>
+</body>
+</html>
