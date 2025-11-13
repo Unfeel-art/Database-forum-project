@@ -1,13 +1,12 @@
-<?php require_once __DIR__ . '/../api/check_signin.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
-<?php include __DIR__ . '/../components/head.php'; ?>
+<?php include __DIR__ . '/components/head.php'; ?>
 <body>
-    <?php include __DIR__ . '/../components/header.php'; ?>
+    <?php include __DIR__ . '/components/header.php'; ?>
     
     <main class="form-page">
         <div class="base-div">
-            <h2>Add Regular User</h2>
+            <h2>Sign Up</h2>
             <div class="form-box">
                 <form id="addForm">
                     <div class="form-field">
@@ -53,17 +52,17 @@
                         >
                     </div>
                     <div class="form-btn">
-                        <a href="../maintenance.php" class="form-cancel-btn">Cancel</a>
-                        <button type="submit" class="form-add-btn">Add</button>
+                        <a href="./index.php" class="form-cancel-btn">Cancel</a>
+                        <button type="submit" class="form-add-btn">Sign Up</button>
                     </div>
                 </form>
             </div>
         </div>
     </main>
     
-    <?php include __DIR__ . '/../components/footer.php'; ?>
+    <?php include __DIR__ . '/components/footer.php'; ?>
 
-    <script src="../js/theme.js"></script>
+    <script src="./js/theme.js"></script>
     <script>
         const form = document.getElementById('addForm');
 
@@ -91,13 +90,11 @@
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify(formData)
                 });
-
                 const data = await res.json();
                 if (!res.ok || !data.id) {
-                    window.location.href = `feedback.php?status=error&message=${encodeURIComponent(data.error || 'Error creating User!')}`;
+                    alert('Error signing up!');
                     return;
                 }
-
                 const res2 = await fetch('/~achernii/api/index.php?table=RegularUsers', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
@@ -105,13 +102,13 @@
                 });
                 const data2 = await res2.json();
                 if (!res2.ok) {
-                    window.location.href = `feedback.php?status=error&message=${encodeURIComponent(data2.error || 'Error creating Regular User!')}`;
+                    alert('Error signing up!');
                     return;
                 }
-                
-                window.location.href = `feedback.php?status=success&message=${encodeURIComponent('Regular User added successfully!')}&id=${data.id}`;
+                alert('You signed up successfully!');
+                window.location.href='./signin.php';
             } catch (err) {
-                window.location.href = `feedback.php?status=error&message=${encodeURIComponent('Failed to send request!')}`;
+                alert('Error signing up!');
             }
         });
     </script>

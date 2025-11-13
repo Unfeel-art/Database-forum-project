@@ -1,3 +1,4 @@
+<?php include __DIR__ . '/../logger/logger.php'; ?>
 <?php require_once __DIR__ . '/../api/check_signin.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -7,19 +8,19 @@
     
     <main class="form-page">
         <div class="base-div">
-            <h2>Add Reaction</h2>
+            <h2>Add Contains Relation</h2>
             <div class="form-box">
                 <form id="addForm">
                     <div class="form-field">
-                        <label for="action">Select Action</label>
-                        <select id="action" name="action" required>
+                        <label for="category">Select Category</label>
+                        <select id="category" name="category" required>
                             <option value="">Loading...</option>
                         </select>
                     </div>
 
                     <div class="form-field">
-                        <label for="post">Select Post</label>
-                        <select id="post" name="post" required>
+                        <label for="thread">Select Thread</label>
+                        <select id="thread" name="thread" required>
                             <option value="">Loading...</option>
                         </select>
                     </div>
@@ -38,47 +39,47 @@
     <script src="../js/theme.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-            const actionSelect = document.getElementById('action');
-            fetch('/~achernii/api/index.php?table=Actions')
+            const categorySelect = document.getElementById('category');
+            fetch('/~achernii/api/index.php?table=Categories')
                 .then(res => res.json())
                 .then(data => {
-                    actionSelect.innerHTML = '';
+                    categorySelect.innerHTML = '';
                     if (data.length === 0) {
-                        actionSelect.innerHTML = '<option value="">No options</option>';
+                        categorySelect.innerHTML = '<option value="">No options</option>';
                         return;
                     }
-                    data.forEach(action => {
+                    data.forEach(category => {
                         const option = document.createElement('option');
-                        option.value = action.action_id;
-                        option.textContent = action.action_id;
-                        actionSelect.appendChild(option);
+                        option.value = category.category_id;
+                        option.textContent = category.name;
+                        categorySelect.appendChild(option);
                     });
                 })
                 .catch(err => {
-                    actionSelect.innerHTML = '<option value="">Failed to load</option>';
+                    categorySelect.innerHTML = '<option value="">Failed to load</option>';
                 });
         });
     </script>
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-            const postSelect = document.getElementById('post');
-            fetch('/~achernii/api/index.php?table=Posts')
+            const threadSelect = document.getElementById('thread');
+            fetch('/~achernii/api/index.php?table=Threads')
                 .then(res => res.json())
                 .then(data => {
-                    postSelect.innerHTML = '';
+                    threadSelect.innerHTML = '';
                     if (data.length === 0) {
-                        postSelect.innerHTML = '<option value="">No options</option>';
+                        threadSelect.innerHTML = '<option value="">No options</option>';
                         return;
                     }
-                    data.forEach(post => {
+                    data.forEach(thread => {
                         const option = document.createElement('option');
-                        option.value = post.post_id;
-                        option.textContent = post.post_id;
-                        postSelect.appendChild(option);
+                        option.value = thread.post_id;
+                        option.textContent = thread.title;
+                        threadSelect.appendChild(option);
                     });
                 })
                 .catch(err => {
-                    postSelect.innerHTML = '<option value="">Failed to load</option>';
+                    threadSelect.innerHTML = '<option value="">Failed to load</option>';
                 });
         });
     </script>
@@ -89,12 +90,12 @@
             e.preventDefault();
 
             const formData = {
-                action_id: document.getElementById('action').value,
-                post_id: document.getElementById('post').value,
+                category_id: document.getElementById('category').value,
+                thread_post_id: document.getElementById('thread').value,
             };
 
             try {
-                const res = await fetch('/~achernii/api/index.php?table=Targets', {
+                const res = await fetch('/~achernii/api/index.php?table=Contains', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify(formData)
@@ -102,11 +103,11 @@
 
                 const data = await res.json();
 
-                if (!res.ok) {
-                    window.location.href = `feedback.php?status=error&message=${encodeURIComponent(data.error || 'Error creating Targets relation!')}`;
+               if (!res.ok) {
+                    window.location.href = `feedback.php?status=error&message=${encodeURIComponent(data.error || 'Error creating Contains relation!')}`;
                     return;
                 }
-                window.location.href = `feedback.php?status=success&message=${encodeURIComponent('Targets relation added successfully!')}`;
+                window.location.href = `feedback.php?status=success&message=${encodeURIComponent('Contains relation added successfully!')}`;
             } catch (err) {
                 window.location.href = `feedback.php?status=error&message=${encodeURIComponent('Failed to send request!')}`;
             }

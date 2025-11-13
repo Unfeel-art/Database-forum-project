@@ -1,3 +1,4 @@
+<?php include __DIR__ . '/../logger/logger.php'; ?>
 <?php require_once __DIR__ . '/../api/check_signin.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -7,7 +8,7 @@
     
     <main class="form-page">
         <div class="base-div">
-            <h2>Add Regular User</h2>
+            <h2>Add Moderator</h2>
             <div class="form-box">
                 <form id="addForm">
                     <div class="form-field">
@@ -94,22 +95,23 @@
 
                 const data = await res.json();
                 if (!res.ok || !data.id) {
-                    window.location.href = `feedback.php?status=error&message=${encodeURIComponent(data.error || 'Error creating User!')}`;
+                    window.location.href = `feedback.php?status=error&message=${encodeURIComponent(data.error || 'Error creating Regular User!')}`;
                     return;
                 }
 
-                const res2 = await fetch('/~achernii/api/index.php?table=RegularUsers', {
+                const res2 = await fetch('/~achernii/api/index.php?table=Moderators', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({ user_id: data.id })
                 });
+                
                 const data2 = await res2.json();
                 if (!res2.ok) {
-                    window.location.href = `feedback.php?status=error&message=${encodeURIComponent(data2.error || 'Error creating Regular User!')}`;
+                    window.location.href = `feedback.php?status=error&message=${encodeURIComponent(data2.error || 'Error creating Moderator!')}`;
                     return;
                 }
                 
-                window.location.href = `feedback.php?status=success&message=${encodeURIComponent('Regular User added successfully!')}&id=${data.id}`;
+                window.location.href = `feedback.php?status=success&message=${encodeURIComponent('Moderator added successfully!')}&id=${data.id}`;
             } catch (err) {
                 window.location.href = `feedback.php?status=error&message=${encodeURIComponent('Failed to send request!')}`;
             }

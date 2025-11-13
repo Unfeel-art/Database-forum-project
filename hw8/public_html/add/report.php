@@ -1,3 +1,4 @@
+<?php include __DIR__ . '/../logger/logger.php'; ?>
 <?php require_once __DIR__ . '/../api/check_signin.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -7,35 +8,24 @@
     
     <main class="form-page">
         <div class="base-div">
-            <h2>Add Thread</h2>
+            <h2>Add Reaction</h2>
             <div class="form-box">
                 <form id="addForm">
                     <div class="form-field">
-                        <label for="title">Title</label>
-                        <input 
-                            type="text" 
-                            id="title" 
-                            name="title" 
-                            placeholder="Enter title"
-                            required
-                        >
-                    </div>
-                    
-                    <div class="form-field">
-                        <label for="content">Content</label>
-                        <textarea
-                            id="content"
-                            name="content"
-                            placeholder="Enter thread content"
-                            required
-                        ></textarea>
-                    </div>
-                    
-                    <div class="form-field">
-                        <label for="author">Select Author</label>
-                        <select id="author" name="author" required>
+                        <label for="user">Select User</label>
+                        <select id="user" name="user" required>
                             <option value="">Loading...</option>
                         </select>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="reason">Report Reason</label>
+                        <textarea
+                            id="reason"
+                            name="reason"
+                            placeholder="Enter report reason"
+                            required
+                        ></textarea>
                     </div>
                     
                     <div class="form-btn">
@@ -52,24 +42,24 @@
     <script src="../js/theme.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-            const authorSelect = document.getElementById('author');
+            const userSelect = document.getElementById('user');
             fetch('/~achernii/api/index.php?table=Users')
                 .then(res => res.json())
                 .then(data => {
-                    authorSelect.innerHTML = '';
+                    userSelect.innerHTML = '';
                     if (data.length === 0) {
-                        authorSelect.innerHTML = '<option value="">No options</option>';
+                        userSelect.innerHTML = '<option value="">No options</option>';
                         return;
                     }
-                    data.forEach(author => {
+                    data.forEach(user => {
                         const option = document.createElement('option');
-                        option.value = author.user_id;
-                        option.textContent = author.username;
-                        authorSelect.appendChild(option);
+                        option.value = user.user_id;
+                        option.textContent = user.username;
+                        userSelect.appendChild(option);
                     });
                 })
                 .catch(err => {
-                    authorSelect.innerHTML = '<option value="">Failed to load</option>';
+                    userSelect.innerHTML = '<option value="">Failed to load</option>';
                 });
         });
     </script>
@@ -78,40 +68,38 @@
 
         form.addEventListener('submit', async (e) => {
             e.preventDefault();
-            
-            const title = document.getElementById('title').value.trim();
-            const content = document.getElementById('content').value.trim();
-            const author = document.getElementById('author').value;
+            const user  = document.getElementById('user').value;
+            const report_reason  = document.getElementById('reason').value.trim();
 
             const formData = {
-                content_body : content,
-                user_id : author,
+                user_id : user,
             };
 
             try {
-                const res = await fetch('/~achernii/api/index.php?table=Posts', {
+                const res = await fetch('/~achernii/api/index.php?table=Actions', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify(formData)
                 });
 
                 const data = await res.json();
-
                 if (!res.ok || !data.id) {
-                    window.location.href = `feedback.php?status=error&message=${encodeURIComponent(data.error || 'Error creating Post!')}`;
+                    window.location.href = `feedback.php?status=error&message=${encodeURIComponent(data.error || 'Error creating Action!')}`;
                     return;
                 }
-                const res2 = await fetch('/~achernii/api/index.php?table=Threads', {
+
+                const res2 = await fetch('/~achernii/api/index.php?table=Reports', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ post_id : data.id, title : title })
+                    body: JSON.stringify({ action_id : data.id, report_reason : report_reason })
                 });
                 const data2 = await res2.json();
                 if (!res2.ok) {
-                    window.location.href = `feedback.php?status=error&message=${encodeURIComponent(data2.error || 'Error creating Thread!')}`;
+                    window.location.href = `feedback.php?status=error&message=${encodeURIComponent(data2.error || 'Error creating Report!')}`;
                     return;
                 }
-                window.location.href = `feedback.php?status=success&message=${encodeURIComponent('Thread added successfully!')}&id=${data.id}`;
+                
+                window.location.href = `feedback.php?status=success&message=${encodeURIComponent('Report added successfully!')}&id=${data.id}`;
             } catch (err) {
                 window.location.href = `feedback.php?status=error&message=${encodeURIComponent('Failed to send request!')}`;
             }

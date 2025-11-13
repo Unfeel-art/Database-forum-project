@@ -1,42 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Forum</title>
-    <link rel="stylesheet" type="text/css" href="../css/style.css">
-    <link rel="icon" href="../img/logo.png" type="image/png">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-    <script>
-        const theme = localStorage.getItem('theme') || 'dark';
-        document.documentElement.setAttribute('data-theme', theme);
-    </script>
-</head>
+<?php include __DIR__ . '/../components/head.php'; ?>
 <body>
-    <header>
-        <div class="base-div">
-            <a href="../index.html">
-                <div class="logo">
-                    <img src="../img/logo.png" class="logo-img">
-                    <h1>Forum</h1>
-                </div>
-            </a>
-            <nav>
-                <a href="../index.html">Home</a>
-                <a href="../index.html#categories">Categories</a>
-                <a href="../index.html#threads">Threads</a>
-                <a href="../imprint.html">Imprint</a>
-                <a href="../maintenance.html">Maintenance</a>
-                <a href="../queries.html">Queries</a>
-            </nav>
-            <div class="header-btn">
-                <button id="theme-btn" class="theme-btn">
-                    <span class="theme-icon">◐</span>
-                </button>
-                <a href="#signin" class="btn-same">Sign In</a>
-                <a href="#signup" class="btn-rev">Sign Up</a>
-            </div>
-        </div>
-    </header>
+    <?php include __DIR__ . '/../components/header.php'; ?>
     
 <main class="form-page">
     <div class="base-div">
@@ -49,30 +15,15 @@
             <p id="feedback-message"></p>
             <div id="results"></div>
             <div class="form-btn">
-                <a href="../queries.html" class="form-cancel-btn">Back to Queries</a>
-                <a href="../index.html" class="form-add-btn">Go to Home</a>
+                <a href="../queries.php" class="form-cancel-btn">Back to Queries</a>
+                <a href="../index.php" class="form-add-btn">Go to Home</a>
             </div>
         </div>
     </div>
 </main>
     
-    <footer>
-        <div class="base-div">
-            <nav>
-                <a href="../index.html">Home</a>
-                <a href="../index.html#categories">Categories</a>
-                <a href="../index.html#threads">Threads</a>
-                <a href="../imprint.html">Imprint</a>
-                <a href="../maintenance.html">Maintenance</a>
-                <a href="../queries.html">Queries</a>
-            </nav>
-            <div class="footer-btn">
-                <a href="#signin" class="btn-same">Sign In</a>
-                <a href="#signup" class="btn-rev">Sign Up</a>
-            </div>
-        </div>
-    </footer>
-    
+    <?php include __DIR__ . '/../components/footer.php'; ?>
+
     <script src="../js/theme.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', () => {
@@ -107,7 +58,7 @@
                     if (queryType === 'threads_by_category') {
                         additionalInfo = `query=${encodeURIComponent("Threads by Category")}&category=${encodeURIComponent(queryResult.category_name)}&author=${encodeURIComponent(queryResult.username)}`;
                         res += `
-                            <a href="entity_description.html?entity=${entity}&id=${queryResult.post_id}&${additionalInfo}">
+                            <a href="entity_description.php?entity=${entity}&id=${queryResult.post_id}&${additionalInfo}">
                             <div class="result-card">
                                 <div class="result-title">ID: ${queryResult.post_id}</div>
                                 <div class="result-info">
@@ -122,7 +73,7 @@
                         entity = 'Posts';
                         additionalInfo = `query=${encodeURIComponent('Reported Posts')}&report_count=${encodeURIComponent(queryResult.report_count)}`;
                         res += `
-                            <a href="entity_description.html?entity=${entity}&id=${queryResult.post_id}&${additionalInfo}">
+                            <a href="entity_description.php?entity=${entity}&id=${queryResult.post_id}&${additionalInfo}">
                             <div class="result-card">
                                 <div class="result-title">ID: ${queryResult.post_id}</div>
                                 <div class="result-info">
@@ -134,7 +85,7 @@
                     } else if (queryType === 'most_liked_threads') {
                         additionalInfo = `query=${encodeURIComponent('Most Liked Threads')}&upvote_count=${encodeURIComponent(queryResult.upvote_count)}`;
                         res += `
-                            <a href="entity_description.html?entity=${entity}&id=${queryResult.post_id}&${additionalInfo}">
+                            <a href="entity_description.php?entity=${entity}&id=${queryResult.post_id}&${additionalInfo}">
                             <div class="result-card">
                                 <div class="result-title">ID: ${queryResult.post_id}</div>
                                 <div class="result-info">

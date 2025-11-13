@@ -1,3 +1,4 @@
+<?php include __DIR__ . '/../logger/logger.php'; ?>
 <?php require_once __DIR__ . '/../api/check_signin.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -11,14 +12,10 @@
             <div class="form-box">
                 <form id="addForm">
                     <div class="form-field">
-                        <label for="title">Title</label>
-                        <input 
-                            type="text" 
-                            id="title" 
-                            name="title" 
-                            placeholder="Enter title"
-                            required
-                        >
+                        <label for="post">Select Post</label>
+                        <select id="post" name="post" required>
+                            <option value="">Loading...</option>
+                        </select>
                     </div>
                     
                     <div class="form-field">
@@ -52,6 +49,29 @@
     <script src="../js/theme.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', () => {
+            const postSelect = document.getElementById('post');
+            fetch('/~achernii/api/index.php?table=Posts')
+                .then(res => res.json())
+                .then(data => {
+                    postSelect.innerHTML = '';
+                    if (data.length === 0) {
+                        postSelect.innerHTML = '<option value="">No options</option>';
+                        return;
+                    }
+                    data.forEach(post => {
+                        const option = document.createElement('option');
+                        option.value = post.post_id;
+                        option.textContent = post.post_id;
+                        postSelect.appendChild(option);
+                    });
+                })
+                .catch(err => {
+                    postSelect.innerHTML = '<option value="">Failed to load</option>';
+                });
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
             const authorSelect = document.getElementById('author');
             fetch('/~achernii/api/index.php?table=Users')
                 .then(res => res.json())
@@ -78,14 +98,13 @@
 
         form.addEventListener('submit', async (e) => {
             e.preventDefault();
-            
-            const title = document.getElementById('title').value.trim();
-            const content = document.getElementById('content').value.trim();
-            const author = document.getElementById('author').value;
+            const content_body  = document.getElementById('content').value.trim();
+            const user_id  = document.getElementById('author').value
+            const reply_post_id = document.getElementById('post').value;
 
             const formData = {
-                content_body : content,
-                user_id : author,
+                content_body : content_body,
+                user_id : user_id,
             };
 
             try {
@@ -96,22 +115,23 @@
                 });
 
                 const data = await res.json();
-
                 if (!res.ok || !data.id) {
                     window.location.href = `feedback.php?status=error&message=${encodeURIComponent(data.error || 'Error creating Post!')}`;
                     return;
                 }
-                const res2 = await fetch('/~achernii/api/index.php?table=Threads', {
+
+                const res2 = await fetch('/~achernii/api/index.php?table=Replies', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ post_id : data.id, title : title })
+                    body: JSON.stringify({ post_id : data.id, reply_post_id : reply_post_id })
                 });
                 const data2 = await res2.json();
                 if (!res2.ok) {
-                    window.location.href = `feedback.php?status=error&message=${encodeURIComponent(data2.error || 'Error creating Thread!')}`;
+                    window.location.href = `feedback.php?status=error&message=${encodeURIComponent(data2.error || 'Error creating Reply!')}`;
                     return;
                 }
-                window.location.href = `feedback.php?status=success&message=${encodeURIComponent('Thread added successfully!')}&id=${data.id}`;
+                
+                window.location.href = `feedback.php?status=success&message=${encodeURIComponent('Reply added successfully!')}&id=${data.id}`;
             } catch (err) {
                 window.location.href = `feedback.php?status=error&message=${encodeURIComponent('Failed to send request!')}`;
             }

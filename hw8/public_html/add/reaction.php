@@ -1,3 +1,4 @@
+<?php include __DIR__ . '/../logger/logger.php'; ?>
 <?php require_once __DIR__ . '/../api/check_signin.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -18,13 +19,11 @@
                     </div>
 
                     <div class="form-field">
-                        <label for="reason">Report Reason</label>
-                        <textarea
-                            id="reason"
-                            name="reason"
-                            placeholder="Enter report reason"
-                            required
-                        ></textarea>
+                        <label for="reaction">Select Reaction Type</label>
+                        <select id="reaction" name="reaction" required>
+                            <option value="up">Upvote</option>
+                            <option value="down">Downvote</option>
+                        </select>
                     </div>
                     
                     <div class="form-btn">
@@ -67,11 +66,11 @@
 
         form.addEventListener('submit', async (e) => {
             e.preventDefault();
-            const user  = document.getElementById('user').value;
-            const report_reason  = document.getElementById('reason').value.trim();
+            const user_id = document.getElementById('user').value;
+            const reaction_type = document.getElementById('reaction').value;
 
             const formData = {
-                user_id : user,
+                user_id : user_id,
             };
 
             try {
@@ -87,18 +86,18 @@
                     return;
                 }
 
-                const res2 = await fetch('/~achernii/api/index.php?table=Reports', {
+                const res2 = await fetch('/~achernii/api/index.php?table=Reactions', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ action_id : data.id, report_reason : report_reason })
+                    body: JSON.stringify({ action_id : data.id, reaction_type : reaction_type })
                 });
                 const data2 = await res2.json();
                 if (!res2.ok) {
-                    window.location.href = `feedback.php?status=error&message=${encodeURIComponent(data2.error || 'Error creating Report!')}`;
+                    window.location.href = `feedback.php?status=error&message=${encodeURIComponent(data2.error || 'Error creating Reaction!')}`;
                     return;
                 }
                 
-                window.location.href = `feedback.php?status=success&message=${encodeURIComponent('Report added successfully!')}&id=${data.id}`;
+                window.location.href = `feedback.php?status=success&message=${encodeURIComponent('Reaction added successfully!')}&id=${data.id}`;
             } catch (err) {
                 window.location.href = `feedback.php?status=error&message=${encodeURIComponent('Failed to send request!')}`;
             }

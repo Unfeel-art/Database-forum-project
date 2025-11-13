@@ -1,43 +1,9 @@
+<?php include __DIR__ . '/logger/logger.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Forum</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="icon" href="img/logo.png" type="image/png">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-    <script>
-        const theme = localStorage.getItem('theme') || 'dark';
-        document.documentElement.setAttribute('data-theme', theme);
-    </script>
-</head>
-
+<?php include __DIR__ . '/components/head.php'; ?>
 <body>
-    <header>
-        <div class="base-div">
-            <a href="index.html">
-                <div class="logo">
-                    <img src="img/logo.png" class="logo-img">
-                    <h1>Forum</h1>
-                </div>
-            </a>
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="index.html#categories">Categories</a>
-                <a href="index.html#threads">Threads</a>
-                <a href="imprint.html">Imprint</a>
-                <a href="maintenance.php">Maintenance</a>
-                <a href="queries.html">Queries</a>
-            </nav>
-            <div class="header-btn">
-                <button id="theme-btn" class="theme-btn">
-                    <span class="theme-icon">◐</span>
-                </button>
-                <a href="signin.html" class="btn-same">Sign In</a>
-                <a href="#signup" class="btn-rev">Sign Up</a>
-            </div>
-        </div>
-    </header>
+    <?php include __DIR__ . '/components/header.php'; ?>
     
     <main class="form-page">
         <div class="base-div">
@@ -67,31 +33,16 @@
                     </div>
 
                     <div class="form-btn">
-                        <a href="index.html" class="form-cancel-btn">Cancel</a>
-                        <button type="submit" class="form-add-btn">Login</button>
+                        <a href="index.php" class="form-cancel-btn">Cancel</a>
+                        <button type="submit" class="form-add-btn">Sign In</button>
                     </div>
                 </form>
             </div>
         </div>
     </main>
     
-    <footer>
-        <div class="base-div">
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="index.html#categories">Categories</a>
-                <a href="index.html#threads">Threads</a>
-                <a href="imprint.html">Imprint</a>
-                <a href="maintenance.php">Maintenance</a>
-                <a href="queries.html">Queries</a>
-            </nav>
-            <div class="footer-btn">
-                <a href="signin.html" class="btn-same">Sign In</a>
-                <a href="#signup" class="btn-rev">Sign Up</a>
-            </div>
-        </div>
-    </footer>
-    
+    <?php include __DIR__ . '/components/footer.php'; ?>
+
     <script src="js/theme.js"></script>
     <script>
         const urlParams = new URLSearchParams(window.location.search);
@@ -121,7 +72,7 @@
                     if (redirect) {
                         window.location.href = redirect;
                     } else {
-                        window.location.href = 'maintenance.php';
+                        window.location.href = 'index.php';
                     }
                 } else {
                     errorMessage.textContent = data.error;
