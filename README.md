@@ -2,7 +2,7 @@
 
 ## Website link
 
-http://10.60.36.1/~achernii/index.html
+http://10.60.36.1/~achernii
 
 ## Course Information
 
@@ -24,22 +24,30 @@ Our web application serves as a forum platform, providing an online space where 
 
 ```
 Database-forum-project/
-├── hw1/                           Homework Assignment 1
-│   ├── assignment1_team 3.pdf        Project overview
-├── hw2/                           Homework Assignment 2
-│   ├── Forum - ER model.png          Database schema (ER model)
-│   ├── assignment2_team 3.pdf        Database overview
-│   └── forumsetup.sql                Database creation SQL
-├── hw3/                           Homework Assignment 3
-│   ├── logs.txt                      Logs of the queries
-│   ├── queries.sql                   SQL select queries 
-│   └── sample.sql                    Sample data to test queries
-├── hw4/                           Homework Assignment 4
-│   ├── public_html/                  Website source files
-│   └── Forum_CD.pdf                  Corporate Design
-├── hw5/                           Homework Assignment 5
-│   ├── public_html                   Website source files
-├── hw6/                           Homework Assignment 6
-│   ├── public_html                   Website source files
-└── README.md                      This README file
+├── hw1/                               Homework Assignment 1
+│   ├── assignment1_team3.pdf           Project overview
+├── hw2/                               Homework Assignment 2
+│   ├── Forum-ER-model.png              Database schema (ER model)
+│   ├── assignment2_team3.pdf           Database overview
+│   └── forumsetup.sql                  Database creation script
+├── hw3/                               Homework Assignment 3
+│   ├── logs.txt                        Query logs
+│   ├── queries.sql                     SQL SELECT queries
+│   └── sample.sql                      Sample data for testing queries
+├── hw4/                               Homework Assignment 4
+│   ├── public_html/                    Website source files
+│   └── Forum_CD.pdf                    Corporate design
+├── hw5/                               Homework Assignment 5
+│   ├── public_html/                    Website source files
+├── hw6/                               Homework Assignment 6
+│   ├── public_html/                    Website source files
+├── hw7/                               Homework Assignment 7
+│   ├── public_html/                    Website source files
+├── hw8/                               Homework Assignment 8
+│   ├── public_html/                    Website source files
+│   │   ├── test_logger.php             Log get script
+│   │   ├── logger_data.json            Logs used for statistics
+│   │   └── ...
+│   └── Database_Forum_HW8.pdf          Log statistics
+└── README.md                           This README file
 ```
