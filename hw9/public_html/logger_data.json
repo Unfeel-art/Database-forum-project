@@ -1,0 +1,1216 @@
+{
+    "stats": {
+        "total_requests": 100,
+        "total_errors": 72,
+        "unique_ips": 1
+    },
+    "access": {
+        "pages": {
+            "\/~achernii\/js\/theme.js": 2,
+            "\/~achernii\/api\/signin.php?action=check_signin": 54,
+            "\/~achernii\/index.php": 6,
+            "\/~achernii\/imprint.php": 2,
+            "\/~achernii\/signup.php": 1,
+            "\/~achernii\/api\/index.php?table=Users": 2,
+            "\/~achernii\/api\/index.php?table=RegularUsers": 1,
+            "\/~achernii\/signin.php": 1,
+            "\/~achernii\/signin_page.php": 2,
+            "\/~achernii\/api\/signin.php?action=signin": 3,
+            "\/~achernii\/maintenance.php": 4,
+            "\/~achernii\/add\/thread.php": 1,
+            "\/~achernii\/img\/select-arrow.svg": 1,
+            "\/~achernii\/api\/index.php?table=Posts": 1,
+            "\/~achernii\/api\/index.php?table=Threads": 1,
+            "\/~achernii\/add\/feedback.php?status=success&message=Thread%20added%20successfully!&id=7": 1,
+            "\/~achernii\/queries.php": 5,
+            "\/~achernii\/query\/reported_posts.php": 1,
+            "\/~achernii\/query\/most_liked_threads.php": 1,
+            "\/~achernii\/api\/queries.php?query=most_liked_threads&limit=0": 1,
+            "\/~achernii\/query\/feedback.php?status=success&message=Query%20executed%20successfully!": 1,
+            "\/~achernii\/query\/entity_description.php?entity=Threads&id=2&query=Most%20Liked%20Threads&upvote_count=1": 1,
+            "\/~achernii\/api\/index.php?table=Threads&id=2": 1,
+            "\/~achernii\/signin_page.php?error=unauthorized&redirect=maintenance.php": 1,
+            "\/~achernii\/css\/style.css": 1,
+            "\/~achernii\/img\/logo.png": 1,
+            "\/~achernii\/js\/auth_tools.js": 1,
+            "\/~achernii\/api\/signin.php?action=signout": 1,
+            "\/~achernii\/test_logger.php?limit=200": 1
+        },
+        "ips": {
+            "10.212.134.2": 100
+        },
+        "browsers": {
+            "Edge": 61,
+            "Chrome": 39
+        },
+        "timeline": [
+            {
+                "time": "13\/Nov\/2025:23:39:04 +0100",
+                "ip": "10.212.134.2",
+                "page": "\/~achernii\/js\/theme.js",
+                "status": "304"
+            },
+            {
+                "time": "13\/Nov\/2025:23:39:04 +0100",
+                "ip": "10.212.134.2",
+                "page": "\/~achernii\/api\/signin.php?action=check_signin",
+                "status": "200"
+            },
+            {
+                "time": "13\/Nov\/2025:23:39:04 +0100",
+                "ip": "10.212.134.2",
+                "page": "\/~achernii\/api\/signin.php?action=check_signin",
+                "status": "200"
+            },
+            {
+                "time": "13\/Nov\/2025:23:39:05 +0100",
+                "ip": "10.212.134.2",
+                "page": "\/~achernii\/index.php",
+                "status": "200"
+            },
+            {
+                "time": "13\/Nov\/2025:23:39:05 +0100",
+                "ip": "10.212.134.2",
+                "page": "\/~achernii\/api\/signin.php?action=check_signin",
+                "status": "200"
+            },
+            {
+                "time": "13\/Nov\/2025:23:39:05 +0100",
+                "ip": "10.212.134.2",
+                "page": "\/~achernii\/api\/signin.php?action=check_signin",
+                "status": "200"
+            },
+            {
+                "time": "13\/Nov\/2025:23:39:06 +0100",
+                "ip": "10.212.134.2",
+                "page": "\/~achernii\/imprint.php",
+                "status": "200"
+            },
+            {
+                "time": "13\/Nov\/2025:23:39:06 +0100",
+                "ip": "10.212.134.2",
+                "page": "\/~achernii\/api\/signin.php?action=check_signin",
+                "status": "200"
+            },
+            {
+                "time": "13\/Nov\/2025:23:39:06 +0100",
+                "ip": "10.212.134.2",
+                "page": "\/~achernii\/api\/signin.php?action=check_signin",
+                "status": "200"
+            },
+            {
+                "time": "13\/Nov\/2025:23:39:07 +0100",
+                "ip": "10.212.134.2",
+                "page": "\/~achernii\/signup.php",
+                "status": "200"
+            },
+            {
+                "time": "13\/Nov\/2025:23:39:07 +0100",
+                "ip": "10.212.134.2",
+                "page": "\/~achernii\/api\/signin.php?action=check_signin",
+                "status": "200"
+            },
+            {
+                "time": "13\/Nov\/2025:23:39:07 +0100",
+                "ip": "10.212.134.2",
+                "page": "\/~achernii\/api\/signin.php?action=check_signin",
+                "status": "200"
+            },
+            {
+                "time": "13\/Nov\/2025:23:39:25 +0100",
+                "ip": "10.212.134.2",
+                "page": "\/~achernii\/api\/index.php?table=Users",
+                "status": "200"
+            },
+            {
+                "time": "13\/Nov\/2025:23:39:25 +0100",
+                "ip": "10.212.134.2",
+                "page": "\/~achernii\/api\/index.php?table=RegularUsers",
+                "status": "200"
+            },
+            {
+                "time": "13\/Nov\/2025:23:39:26 +0100",
+                "ip": "10.212.134.2",
+                "page": "\/~achernii\/signin.php",
+                "status": "404"
+            },
+            {
+                "time": "13\/Nov\/2025:23:39:31 +0100",
+                "ip": "10.212.134.2",
+                "page": "\/~achernii\/signin_page.php",
+                "status": "200"
+            },
+            {
+                "time": "13\/Nov\/2025:23:39:31 +0100",
+                "ip": "10.212.134.2",
+                "page": "\/~achernii\/api\/signin.php?action=check_signin",
+                "status": "200"
+            },
+            {
+                "time": "13\/Nov\/2025:23:39:31 +0100",
+                "ip": "10.212.134.2",
+                "page": "\/~achernii\/api\/signin.php?action=check_signin",
+                "status": "200"
+            },
+            {
+                "time": "13\/Nov\/2025:23:39:36 +0100",
+                "ip": "10.212.134.2",
+                "page": "\/~achernii\/api\/signin.php?action=signin",
+                "status": "200"
+            },
+            {
+                "time": "13\/Nov\/2025:23:39:36 +0100",
+                "ip": "10.212.134.2",
+                "page": "\/~achernii\/index.php",
+                "status": "200"
+            },
+            {
+                "time": "13\/Nov\/2025:23:39:36 +0100",
+                "ip": "10.212.134.2",
+                "page": "\/~achernii\/api\/signin.php?action=check_signin",
+                "status": "200"
+            },
+            {
+                "time": "13\/Nov\/2025:23:39:36 +0100",
+                "ip": "10.212.134.2",
+                "page": "\/~achernii\/api\/signin.php?action=check_signin",
+                "status": "200"
+            },
+            {
+                "time": "13\/Nov\/2025:23:39:37 +0100",
+                "ip": "10.212.134.2",
+                "page": "\/~achernii\/maintenance.php",
+                "status": "200"
+            },
+            {
+                "time": "13\/Nov\/2025:23:39:37 +0100",
+                "ip": "10.212.134.2",
+                "page": "\/~achernii\/api\/signin.php?action=check_signin",
+                "status": "200"
+            },
+            {
+                "time": "13\/Nov\/2025:23:39:37 +0100",
+                "ip": "10.212.134.2",
+                "page": "\/~achernii\/api\/signin.php?action=check_signin",
+                "status": "200"
+            },
+            {
+                "time": "13\/Nov\/2025:23:39:40 +0100",
+                "ip": "10.212.134.2",
+                "page": "\/~achernii\/add\/thread.php",
+                "status": "200"
+            },
+            {
+                "time": "13\/Nov\/2025:23:39:40 +0100",
+                "ip": "10.212.134.2",
+                "page": "\/~achernii\/api\/signin.php?action=check_signin",
+                "status": "200"
+            },
+            {
+                "time": "13\/Nov\/2025:23:39:40 +0100",
+                "ip": "10.212.134.2",
+                "page": "\/~achernii\/api\/index.php?table=Users",
+                "status": "200"
+            },
+            {
+                "time": "13\/Nov\/2025:23:39:40 +0100",
+                "ip": "10.212.134.2",
+                "page": "\/~achernii\/api\/signin.php?action=check_signin",
+                "status": "200"
+            },
+            {
+                "time": "13\/Nov\/2025:23:39:40 +0100",
+                "ip": "10.212.134.2",
+                "page": "\/~achernii\/img\/select-arrow.svg",
+                "status": "200"
+            },
+            {
+                "time": "13\/Nov\/2025:23:39:59 +0100",
+                "ip": "10.212.134.2",
+                "page": "\/~achernii\/api\/index.php?table=Posts",
+                "status": "200"
+            },
+            {
+                "time": "13\/Nov\/2025:23:39:59 +0100",
+                "ip": "10.212.134.2",
+                "page": "\/~achernii\/api\/index.php?table=Threads",
+                "status": "200"
+            },
+            {
+                "time": "13\/Nov\/2025:23:39:59 +0100",
+                "ip": "10.212.134.2",
+                "page": "\/~achernii\/add\/feedback.php?status=success&message=Thread%20added%20successfully!&id=7",
+                "status": "200"
+            },
+            {
+                "time": "13\/Nov\/2025:23:39:59 +0100",
+                "ip": "10.212.134.2",
+                "page": "\/~achernii\/api\/signin.php?action=check_signin",
+                "status": "200"
+            },
+            {
+                "time": "13\/Nov\/2025:23:39:59 +0100",
+                "ip": "10.212.134.2",
+                "page": "\/~achernii\/api\/signin.php?action=check_signin",
+                "status": "200"
+            },
+            {
+                "time": "13\/Nov\/2025:23:40:01 +0100",
+                "ip": "10.212.134.2",
+                "page": "\/~achernii\/maintenance.php",
+                "status": "200"
+            },
+            {
+                "time": "13\/Nov\/2025:23:40:01 +0100",
+                "ip": "10.212.134.2",
+                "page": "\/~achernii\/api\/signin.php?action=check_signin",
+                "status": "200"
+            },
+            {
+                "time": "13\/Nov\/2025:23:40:01 +0100",
+                "ip": "10.212.134.2",
+                "page": "\/~achernii\/api\/signin.php?action=check_signin",
+                "status": "200"
+            },
+            {
+                "time": "13\/Nov\/2025:23:40:01 +0100",
+                "ip": "10.212.134.2",
+                "page": "\/~achernii\/queries.php",
+                "status": "200"
+            },
+            {
+                "time": "13\/Nov\/2025:23:40:01 +0100",
+                "ip": "10.212.134.2",
+                "page": "\/~achernii\/api\/signin.php?action=check_signin",
+                "status": "200"
+            },
+            {
+                "time": "13\/Nov\/2025:23:40:01 +0100",
+                "ip": "10.212.134.2",
+                "page": "\/~achernii\/api\/signin.php?action=check_signin",
+                "status": "200"
+            },
+            {
+                "time": "13\/Nov\/2025:23:40:02 +0100",
+                "ip": "10.212.134.2",
+                "page": "\/~achernii\/query\/reported_posts.php",
+                "status": "200"
+            },
+            {
+                "time": "13\/Nov\/2025:23:40:02 +0100",
+                "ip": "10.212.134.2",
+                "page": "\/~achernii\/api\/signin.php?action=check_signin",
+                "status": "200"
+            },
+            {
+                "time": "13\/Nov\/2025:23:40:02 +0100",
+                "ip": "10.212.134.2",
+                "page": "\/~achernii\/api\/signin.php?action=check_signin",
+                "status": "200"
+            },
+            {
+                "time": "13\/Nov\/2025:23:40:05 +0100",
+                "ip": "10.212.134.2",
+                "page": "\/~achernii\/queries.php",
+                "status": "200"
+            },
+            {
+                "time": "13\/Nov\/2025:23:40:05 +0100",
+                "ip": "10.212.134.2",
+                "page": "\/~achernii\/api\/signin.php?action=check_signin",
+                "status": "200"
+            },
+            {
+                "time": "13\/Nov\/2025:23:40:05 +0100",
+                "ip": "10.212.134.2",
+                "page": "\/~achernii\/api\/signin.php?action=check_signin",
+                "status": "200"
+            },
+            {
+                "time": "13\/Nov\/2025:23:40:05 +0100",
+                "ip": "10.212.134.2",
+                "page": "\/~achernii\/query\/most_liked_threads.php",
+                "status": "200"
+            },
+            {
+                "time": "13\/Nov\/2025:23:40:05 +0100",
+                "ip": "10.212.134.2",
+                "page": "\/~achernii\/api\/signin.php?action=check_signin",
+                "status": "200"
+            },
+            {
+                "time": "13\/Nov\/2025:23:40:05 +0100",
+                "ip": "10.212.134.2",
+                "page": "\/~achernii\/api\/signin.php?action=check_signin",
+                "status": "200"
+            },
+            {
+                "time": "13\/Nov\/2025:23:40:07 +0100",
+                "ip": "10.212.134.2",
+                "page": "\/~achernii\/api\/queries.php?query=most_liked_threads&limit=0",
+                "status": "200"
+            },
+            {
+                "time": "13\/Nov\/2025:23:40:07 +0100",
+                "ip": "10.212.134.2",
+                "page": "\/~achernii\/query\/feedback.php?status=success&message=Query%20executed%20successfully!",
+                "status": "200"
+            },
+            {
+                "time": "13\/Nov\/2025:23:40:07 +0100",
+                "ip": "10.212.134.2",
+                "page": "\/~achernii\/api\/signin.php?action=check_signin",
+                "status": "200"
+            },
+            {
+                "time": "13\/Nov\/2025:23:40:07 +0100",
+                "ip": "10.212.134.2",
+                "page": "\/~achernii\/api\/signin.php?action=check_signin",
+                "status": "200"
+            },
+            {
+                "time": "13\/Nov\/2025:23:40:10 +0100",
+                "ip": "10.212.134.2",
+                "page": "\/~achernii\/query\/entity_description.php?entity=Threads&id=2&query=Most%20Liked%20Threads&upvote_count=1",
+                "status": "200"
+            },
+            {
+                "time": "13\/Nov\/2025:23:40:10 +0100",
+                "ip": "10.212.134.2",
+                "page": "\/~achernii\/api\/signin.php?action=check_signin",
+                "status": "200"
+            },
+            {
+                "time": "13\/Nov\/2025:23:40:10 +0100",
+                "ip": "10.212.134.2",
+                "page": "\/~achernii\/api\/index.php?table=Threads&id=2",
+                "status": "200"
+            },
+            {
+                "time": "13\/Nov\/2025:23:40:10 +0100",
+                "ip": "10.212.134.2",
+                "page": "\/~achernii\/api\/signin.php?action=check_signin",
+                "status": "200"
+            },
+            {
+                "time": "13\/Nov\/2025:23:40:12 +0100",
+                "ip": "10.212.134.2",
+                "page": "\/~achernii\/queries.php",
+                "status": "200"
+            },
+            {
+                "time": "13\/Nov\/2025:23:40:12 +0100",
+                "ip": "10.212.134.2",
+                "page": "\/~achernii\/api\/signin.php?action=check_signin",
+                "status": "200"
+            },
+            {
+                "time": "13\/Nov\/2025:23:40:12 +0100",
+                "ip": "10.212.134.2",
+                "page": "\/~achernii\/api\/signin.php?action=check_signin",
+                "status": "200"
+            },
+            {
+                "time": "13\/Nov\/2025:23:40:17 +0100",
+                "ip": "10.212.134.2",
+                "page": "\/~achernii\/maintenance.php",
+                "status": "302"
+            },
+            {
+                "time": "13\/Nov\/2025:23:40:17 +0100",
+                "ip": "10.212.134.2",
+                "page": "\/~achernii\/signin_page.php?error=unauthorized&redirect=maintenance.php",
+                "status": "200"
+            },
+            {
+                "time": "13\/Nov\/2025:23:40:18 +0100",
+                "ip": "10.212.134.2",
+                "page": "\/~achernii\/css\/style.css",
+                "status": "304"
+            },
+            {
+                "time": "13\/Nov\/2025:23:40:18 +0100",
+                "ip": "10.212.134.2",
+                "page": "\/~achernii\/img\/logo.png",
+                "status": "304"
+            },
+            {
+                "time": "13\/Nov\/2025:23:40:18 +0100",
+                "ip": "10.212.134.2",
+                "page": "\/~achernii\/js\/auth_tools.js",
+                "status": "304"
+            },
+            {
+                "time": "13\/Nov\/2025:23:40:18 +0100",
+                "ip": "10.212.134.2",
+                "page": "\/~achernii\/js\/theme.js",
+                "status": "304"
+            },
+            {
+                "time": "13\/Nov\/2025:23:40:18 +0100",
+                "ip": "10.212.134.2",
+                "page": "\/~achernii\/api\/signin.php?action=check_signin",
+                "status": "200"
+            },
+            {
+                "time": "13\/Nov\/2025:23:40:18 +0100",
+                "ip": "10.212.134.2",
+                "page": "\/~achernii\/api\/signin.php?action=check_signin",
+                "status": "200"
+            },
+            {
+                "time": "13\/Nov\/2025:23:40:18 +0100",
+                "ip": "10.212.134.2",
+                "page": "\/~achernii\/queries.php",
+                "status": "200"
+            },
+            {
+                "time": "13\/Nov\/2025:23:40:19 +0100",
+                "ip": "10.212.134.2",
+                "page": "\/~achernii\/api\/signin.php?action=check_signin",
+                "status": "200"
+            },
+            {
+                "time": "13\/Nov\/2025:23:40:19 +0100",
+                "ip": "10.212.134.2",
+                "page": "\/~achernii\/api\/signin.php?action=check_signin",
+                "status": "200"
+            },
+            {
+                "time": "13\/Nov\/2025:23:40:19 +0100",
+                "ip": "10.212.134.2",
+                "page": "\/~achernii\/index.php",
+                "status": "200"
+            },
+            {
+                "time": "13\/Nov\/2025:23:40:20 +0100",
+                "ip": "10.212.134.2",
+                "page": "\/~achernii\/api\/signin.php?action=check_signin",
+                "status": "200"
+            },
+            {
+                "time": "13\/Nov\/2025:23:40:20 +0100",
+                "ip": "10.212.134.2",
+                "page": "\/~achernii\/api\/signin.php?action=check_signin",
+                "status": "200"
+            },
+            {
+                "time": "13\/Nov\/2025:23:40:20 +0100",
+                "ip": "10.212.134.2",
+                "page": "\/~achernii\/index.php",
+                "status": "200"
+            },
+            {
+                "time": "13\/Nov\/2025:23:40:20 +0100",
+                "ip": "10.212.134.2",
+                "page": "\/~achernii\/api\/signin.php?action=check_signin",
+                "status": "200"
+            },
+            {
+                "time": "13\/Nov\/2025:23:40:20 +0100",
+                "ip": "10.212.134.2",
+                "page": "\/~achernii\/api\/signin.php?action=check_signin",
+                "status": "200"
+            },
+            {
+                "time": "13\/Nov\/2025:23:40:21 +0100",
+                "ip": "10.212.134.2",
+                "page": "\/~achernii\/imprint.php",
+                "status": "200"
+            },
+            {
+                "time": "13\/Nov\/2025:23:40:21 +0100",
+                "ip": "10.212.134.2",
+                "page": "\/~achernii\/api\/signin.php?action=check_signin",
+                "status": "200"
+            },
+            {
+                "time": "13\/Nov\/2025:23:40:21 +0100",
+                "ip": "10.212.134.2",
+                "page": "\/~achernii\/api\/signin.php?action=check_signin",
+                "status": "200"
+            },
+            {
+                "time": "13\/Nov\/2025:23:40:22 +0100",
+                "ip": "10.212.134.2",
+                "page": "\/~achernii\/signin_page.php",
+                "status": "200"
+            },
+            {
+                "time": "13\/Nov\/2025:23:40:23 +0100",
+                "ip": "10.212.134.2",
+                "page": "\/~achernii\/api\/signin.php?action=check_signin",
+                "status": "200"
+            },
+            {
+                "time": "13\/Nov\/2025:23:40:23 +0100",
+                "ip": "10.212.134.2",
+                "page": "\/~achernii\/api\/signin.php?action=check_signin",
+                "status": "200"
+            },
+            {
+                "time": "13\/Nov\/2025:23:40:29 +0100",
+                "ip": "10.212.134.2",
+                "page": "\/~achernii\/api\/signin.php?action=signin",
+                "status": "200"
+            },
+            {
+                "time": "13\/Nov\/2025:23:40:34 +0100",
+                "ip": "10.212.134.2",
+                "page": "\/~achernii\/api\/signin.php?action=signin",
+                "status": "200"
+            },
+            {
+                "time": "13\/Nov\/2025:23:40:34 +0100",
+                "ip": "10.212.134.2",
+                "page": "\/~achernii\/index.php",
+                "status": "200"
+            },
+            {
+                "time": "13\/Nov\/2025:23:40:34 +0100",
+                "ip": "10.212.134.2",
+                "page": "\/~achernii\/api\/signin.php?action=check_signin",
+                "status": "200"
+            },
+            {
+                "time": "13\/Nov\/2025:23:40:34 +0100",
+                "ip": "10.212.134.2",
+                "page": "\/~achernii\/api\/signin.php?action=check_signin",
+                "status": "200"
+            },
+            {
+                "time": "13\/Nov\/2025:23:40:38 +0100",
+                "ip": "10.212.134.2",
+                "page": "\/~achernii\/maintenance.php",
+                "status": "200"
+            },
+            {
+                "time": "13\/Nov\/2025:23:40:38 +0100",
+                "ip": "10.212.134.2",
+                "page": "\/~achernii\/api\/signin.php?action=check_signin",
+                "status": "200"
+            },
+            {
+                "time": "13\/Nov\/2025:23:40:38 +0100",
+                "ip": "10.212.134.2",
+                "page": "\/~achernii\/api\/signin.php?action=check_signin",
+                "status": "200"
+            },
+            {
+                "time": "13\/Nov\/2025:23:40:39 +0100",
+                "ip": "10.212.134.2",
+                "page": "\/~achernii\/queries.php",
+                "status": "200"
+            },
+            {
+                "time": "13\/Nov\/2025:23:40:39 +0100",
+                "ip": "10.212.134.2",
+                "page": "\/~achernii\/api\/signin.php?action=check_signin",
+                "status": "200"
+            },
+            {
+                "time": "13\/Nov\/2025:23:40:39 +0100",
+                "ip": "10.212.134.2",
+                "page": "\/~achernii\/api\/signin.php?action=check_signin",
+                "status": "200"
+            },
+            {
+                "time": "13\/Nov\/2025:23:40:40 +0100",
+                "ip": "10.212.134.2",
+                "page": "\/~achernii\/api\/signin.php?action=signout",
+                "status": "200"
+            },
+            {
+                "time": "13\/Nov\/2025:23:40:40 +0100",
+                "ip": "10.212.134.2",
+                "page": "\/~achernii\/index.php",
+                "status": "200"
+            },
+            {
+                "time": "13\/Nov\/2025:23:40:40 +0100",
+                "ip": "10.212.134.2",
+                "page": "\/~achernii\/api\/signin.php?action=check_signin",
+                "status": "200"
+            },
+            {
+                "time": "13\/Nov\/2025:23:40:40 +0100",
+                "ip": "10.212.134.2",
+                "page": "\/~achernii\/api\/signin.php?action=check_signin",
+                "status": "200"
+            },
+            {
+                "time": "13\/Nov\/2025:23:40:48 +0100",
+                "ip": "10.212.134.2",
+                "page": "\/~achernii\/test_logger.php?limit=200",
+                "status": "200"
+            }
+        ]
+    },
+    "errors": {
+        "error_types": {
+            "Other Error": 72
+        },
+        "error_ips": {
+            "172.16.38.16:61381": 3,
+            "172.16.38.16:50678": 2,
+            "172.16.38.16:50583": 2,
+            "172.16.38.16:60634": 2,
+            "172.16.38.16:63519": 2,
+            "172.16.38.16:55378": 3,
+            "10.212.134.2:62479": 16,
+            "10.212.134.2:61842": 3,
+            "10.212.134.2:56950": 1,
+            "10.212.134.2:55937": 6,
+            "10.212.134.2:62200": 4,
+            "10.212.134.2:53854": 6,
+            "10.212.134.2:51415": 8,
+            "10.212.134.2:64727": 5,
+            "10.212.134.2:54277": 2,
+            "10.212.134.2:57017": 2,
+            "10.212.134.2:56318": 1,
+            "10.212.134.2:56066": 1,
+            "10.212.134.2:55298": 2,
+            "10.212.134.2:64461": 1
+        },
+        "timeline": [
+            {
+                "time": "Thu Nov 06 23:24:05.859608 2025",
+                "ip": "172.16.38.16:61381",
+                "error": "script '\/home\/achernii\/public_html\/api\/auth.php' not found or unable to stat, referer: http:\/\/10.60.36.1\/~achernii\/signin.html"
+            },
+            {
+                "time": "Thu Nov 06 23:24:09.025557 2025",
+                "ip": "172.16.38.16:61381",
+                "error": "PHP Warning:  require_once(..\/api\/check_signin.php): failed to open stream: No such file or directory in \/home\/achernii\/public_html\/maintenance.php on line 1, referer: http:\/\/10.60.36.1\/~achernii\/index.html"
+            },
+            {
+                "time": "Thu Nov 06 23:24:09.025580 2025",
+                "ip": "172.16.38.16:61381",
+                "error": "PHP Fatal error:  require_once(): Failed opening required '..\/api\/check_signin.php' (include_path='.:\/usr\/share\/php7:\/usr\/share\/php7\/PEAR') in \/home\/achernii\/public_html\/maintenance.php on line 1, referer: http:\/\/10.60.36.1\/~achernii\/index.html"
+            },
+            {
+                "time": "Thu Nov 06 23:25:03.187599 2025",
+                "ip": "172.16.38.16:50678",
+                "error": "PHP Warning:  require_once(..\/api\/check_signin.php): failed to open stream: No such file or directory in \/home\/achernii\/public_html\/maintenance.php on line 1, referer: http:\/\/10.60.36.1\/~achernii\/index.html"
+            },
+            {
+                "time": "Thu Nov 06 23:25:03.187634 2025",
+                "ip": "172.16.38.16:50678",
+                "error": "PHP Fatal error:  require_once(): Failed opening required '..\/api\/check_signin.php' (include_path='.:\/usr\/share\/php7:\/usr\/share\/php7\/PEAR') in \/home\/achernii\/public_html\/maintenance.php on line 1, referer: http:\/\/10.60.36.1\/~achernii\/index.html"
+            },
+            {
+                "time": "Thu Nov 06 23:25:35.570475 2025",
+                "ip": "172.16.38.16:50583",
+                "error": "PHP Warning:  require_once(..\/api\/check_signin.php): failed to open stream: No such file or directory in \/home\/achernii\/public_html\/maintenance.php on line 1, referer: http:\/\/10.60.36.1\/~achernii\/index.html"
+            },
+            {
+                "time": "Thu Nov 06 23:25:35.570503 2025",
+                "ip": "172.16.38.16:50583",
+                "error": "PHP Fatal error:  require_once(): Failed opening required '..\/api\/check_signin.php' (include_path='.:\/usr\/share\/php7:\/usr\/share\/php7\/PEAR') in \/home\/achernii\/public_html\/maintenance.php on line 1, referer: http:\/\/10.60.36.1\/~achernii\/index.html"
+            },
+            {
+                "time": "Thu Nov 06 23:27:20.327169 2025",
+                "ip": "172.16.38.16:60634",
+                "error": "PHP Warning:  require_once(..\/api\/check_signin.php): failed to open stream: No such file or directory in \/home\/achernii\/public_html\/maintenance.php on line 1, referer: http:\/\/10.60.36.1\/~achernii\/index.html"
+            },
+            {
+                "time": "Thu Nov 06 23:27:20.327209 2025",
+                "ip": "172.16.38.16:60634",
+                "error": "PHP Fatal error:  require_once(): Failed opening required '..\/api\/check_signin.php' (include_path='.:\/usr\/share\/php7:\/usr\/share\/php7\/PEAR') in \/home\/achernii\/public_html\/maintenance.php on line 1, referer: http:\/\/10.60.36.1\/~achernii\/index.html"
+            },
+            {
+                "time": "Thu Nov 06 23:27:25.122159 2025",
+                "ip": "172.16.38.16:63519",
+                "error": "PHP Warning:  require_once(..\/api\/check_signin.php): failed to open stream: No such file or directory in \/home\/achernii\/public_html\/maintenance.php on line 1, referer: http:\/\/10.60.36.1\/~achernii\/imprint.html"
+            },
+            {
+                "time": "Thu Nov 06 23:27:25.122185 2025",
+                "ip": "172.16.38.16:63519",
+                "error": "PHP Fatal error:  require_once(): Failed opening required '..\/api\/check_signin.php' (include_path='.:\/usr\/share\/php7:\/usr\/share\/php7\/PEAR') in \/home\/achernii\/public_html\/maintenance.php on line 1, referer: http:\/\/10.60.36.1\/~achernii\/imprint.html"
+            },
+            {
+                "time": "Thu Nov 06 23:43:28.037411 2025",
+                "ip": "172.16.38.16:55378",
+                "error": "script '\/home\/achernii\/public_html\/api\/auth.php' not found or unable to stat, referer: http:\/\/10.60.36.1\/~achernii\/signin.html?error=unauthorized&redirect=maintenance.php"
+            },
+            {
+                "time": "Thu Nov 06 23:43:29.389347 2025",
+                "ip": "172.16.38.16:55378",
+                "error": "script '\/home\/achernii\/public_html\/api\/auth.php' not found or unable to stat, referer: http:\/\/10.60.36.1\/~achernii\/signin.html?error=unauthorized&redirect=maintenance.php"
+            },
+            {
+                "time": "Thu Nov 06 23:43:41.650244 2025",
+                "ip": "172.16.38.16:55378",
+                "error": "script '\/home\/achernii\/public_html\/api\/auth.php' not found or unable to stat, referer: http:\/\/10.60.36.1\/~achernii\/signin.html?error=unauthorized&redirect=maintenance.php"
+            },
+            {
+                "time": "Tue Nov 11 17:43:09.513504 2025",
+                "ip": "10.212.134.2:62479",
+                "error": "PHP Warning:  include(\/~achernii\/components\/head.php): failed to open stream: No such file or directory in \/home\/achernii\/public_html\/index.php on line 3"
+            },
+            {
+                "time": "Tue Nov 11 17:43:09.513534 2025",
+                "ip": "10.212.134.2:62479",
+                "error": "PHP Warning:  include(): Failed opening '\/~achernii\/components\/head.php' for inclusion (include_path='.:\/usr\/share\/php7:\/usr\/share\/php7\/PEAR') in \/home\/achernii\/public_html\/index.php on line 3"
+            },
+            {
+                "time": "Tue Nov 11 17:43:09.513548 2025",
+                "ip": "10.212.134.2:62479",
+                "error": "PHP Warning:  include(\/~achernii\/components\/header.php): failed to open stream: No such file or directory in \/home\/achernii\/public_html\/index.php on line 6"
+            },
+            {
+                "time": "Tue Nov 11 17:43:09.513552 2025",
+                "ip": "10.212.134.2:62479",
+                "error": "PHP Warning:  include(): Failed opening '\/~achernii\/components\/header.php' for inclusion (include_path='.:\/usr\/share\/php7:\/usr\/share\/php7\/PEAR') in \/home\/achernii\/public_html\/index.php on line 6"
+            },
+            {
+                "time": "Tue Nov 11 17:43:10.485019 2025",
+                "ip": "10.212.134.2:62479",
+                "error": "PHP Warning:  include(\/~achernii\/components\/head.php): failed to open stream: No such file or directory in \/home\/achernii\/public_html\/index.php on line 3"
+            },
+            {
+                "time": "Tue Nov 11 17:43:10.485042 2025",
+                "ip": "10.212.134.2:62479",
+                "error": "PHP Warning:  include(): Failed opening '\/~achernii\/components\/head.php' for inclusion (include_path='.:\/usr\/share\/php7:\/usr\/share\/php7\/PEAR') in \/home\/achernii\/public_html\/index.php on line 3"
+            },
+            {
+                "time": "Tue Nov 11 17:43:10.485064 2025",
+                "ip": "10.212.134.2:62479",
+                "error": "PHP Warning:  include(\/~achernii\/components\/header.php): failed to open stream: No such file or directory in \/home\/achernii\/public_html\/index.php on line 6"
+            },
+            {
+                "time": "Tue Nov 11 17:43:10.485067 2025",
+                "ip": "10.212.134.2:62479",
+                "error": "PHP Warning:  include(): Failed opening '\/~achernii\/components\/header.php' for inclusion (include_path='.:\/usr\/share\/php7:\/usr\/share\/php7\/PEAR') in \/home\/achernii\/public_html\/index.php on line 6"
+            },
+            {
+                "time": "Tue Nov 11 17:43:11.000771 2025",
+                "ip": "10.212.134.2:62479",
+                "error": "PHP Warning:  include(\/~achernii\/components\/head.php): failed to open stream: No such file or directory in \/home\/achernii\/public_html\/index.php on line 3"
+            },
+            {
+                "time": "Tue Nov 11 17:43:11.000794 2025",
+                "ip": "10.212.134.2:62479",
+                "error": "PHP Warning:  include(): Failed opening '\/~achernii\/components\/head.php' for inclusion (include_path='.:\/usr\/share\/php7:\/usr\/share\/php7\/PEAR') in \/home\/achernii\/public_html\/index.php on line 3"
+            },
+            {
+                "time": "Tue Nov 11 17:43:11.000806 2025",
+                "ip": "10.212.134.2:62479",
+                "error": "PHP Warning:  include(\/~achernii\/components\/header.php): failed to open stream: No such file or directory in \/home\/achernii\/public_html\/index.php on line 6"
+            },
+            {
+                "time": "Tue Nov 11 17:43:11.000809 2025",
+                "ip": "10.212.134.2:62479",
+                "error": "PHP Warning:  include(): Failed opening '\/~achernii\/components\/header.php' for inclusion (include_path='.:\/usr\/share\/php7:\/usr\/share\/php7\/PEAR') in \/home\/achernii\/public_html\/index.php on line 6"
+            },
+            {
+                "time": "Tue Nov 11 17:43:11.425974 2025",
+                "ip": "10.212.134.2:62479",
+                "error": "PHP Warning:  include(\/~achernii\/components\/head.php): failed to open stream: No such file or directory in \/home\/achernii\/public_html\/index.php on line 3"
+            },
+            {
+                "time": "Tue Nov 11 17:43:11.425995 2025",
+                "ip": "10.212.134.2:62479",
+                "error": "PHP Warning:  include(): Failed opening '\/~achernii\/components\/head.php' for inclusion (include_path='.:\/usr\/share\/php7:\/usr\/share\/php7\/PEAR') in \/home\/achernii\/public_html\/index.php on line 3"
+            },
+            {
+                "time": "Tue Nov 11 17:43:11.426005 2025",
+                "ip": "10.212.134.2:62479",
+                "error": "PHP Warning:  include(\/~achernii\/components\/header.php): failed to open stream: No such file or directory in \/home\/achernii\/public_html\/index.php on line 6"
+            },
+            {
+                "time": "Tue Nov 11 17:43:11.426009 2025",
+                "ip": "10.212.134.2:62479",
+                "error": "PHP Warning:  include(): Failed opening '\/~achernii\/components\/header.php' for inclusion (include_path='.:\/usr\/share\/php7:\/usr\/share\/php7\/PEAR') in \/home\/achernii\/public_html\/index.php on line 6"
+            },
+            {
+                "time": "Tue Nov 11 17:56:13.778670 2025",
+                "ip": "10.212.134.2:61842",
+                "error": "script '\/srv\/www\/htdocs\/index.php' not found or unable to stat, referer: http:\/\/10.60.36.1\/~achernii\/"
+            },
+            {
+                "time": "Tue Nov 11 17:56:23.680378 2025",
+                "ip": "10.212.134.2:61842",
+                "error": "script '\/srv\/www\/htdocs\/imprint.php' not found or unable to stat, referer: http:\/\/10.60.36.1\/~achernii\/"
+            },
+            {
+                "time": "Tue Nov 11 17:56:33.464508 2025",
+                "ip": "10.212.134.2:61842",
+                "error": "script '\/srv\/www\/htdocs\/index.php' not found or unable to stat, referer: http:\/\/10.60.36.1\/~achernii\/"
+            },
+            {
+                "time": "Tue Nov 11 18:15:37.132174 2025",
+                "ip": "10.212.134.2:56950",
+                "error": "script '\/srv\/www\/htdocs\/index.php' not found or unable to stat, referer: http:\/\/10.60.36.1\/~achernii\/index.php"
+            },
+            {
+                "time": "Tue Nov 11 18:57:42.793163 2025",
+                "ip": "10.212.134.2:55937",
+                "error": "PHP Warning:  include(\/home\/achernii\/public_html\/..\/components\/head.php): failed to open stream: No such file or directory in \/home\/achernii\/public_html\/signup.php on line 3, referer: http:\/\/10.60.36.1\/~achernii\/signin.php?error=unauthorized&redirect=maintenance.php"
+            },
+            {
+                "time": "Tue Nov 11 18:57:42.793194 2025",
+                "ip": "10.212.134.2:55937",
+                "error": "PHP Warning:  include(): Failed opening '\/home\/achernii\/public_html\/..\/components\/head.php' for inclusion (include_path='.:\/usr\/share\/php7:\/usr\/share\/php7\/PEAR') in \/home\/achernii\/public_html\/signup.php on line 3, referer: http:\/\/10.60.36.1\/~achernii\/signin.php?error=unauthorized&redirect=maintenance.php"
+            },
+            {
+                "time": "Tue Nov 11 18:57:42.793211 2025",
+                "ip": "10.212.134.2:55937",
+                "error": "PHP Warning:  include(\/home\/achernii\/public_html\/..\/components\/header.php): failed to open stream: No such file or directory in \/home\/achernii\/public_html\/signup.php on line 5, referer: http:\/\/10.60.36.1\/~achernii\/signin.php?error=unauthorized&redirect=maintenance.php"
+            },
+            {
+                "time": "Tue Nov 11 18:57:42.793215 2025",
+                "ip": "10.212.134.2:55937",
+                "error": "PHP Warning:  include(): Failed opening '\/home\/achernii\/public_html\/..\/components\/header.php' for inclusion (include_path='.:\/usr\/share\/php7:\/usr\/share\/php7\/PEAR') in \/home\/achernii\/public_html\/signup.php on line 5, referer: http:\/\/10.60.36.1\/~achernii\/signin.php?error=unauthorized&redirect=maintenance.php"
+            },
+            {
+                "time": "Tue Nov 11 18:57:42.793896 2025",
+                "ip": "10.212.134.2:55937",
+                "error": "PHP Warning:  include(\/home\/achernii\/public_html\/..\/components\/footer.php): failed to open stream: No such file or directory in \/home\/achernii\/public_html\/signup.php on line 63, referer: http:\/\/10.60.36.1\/~achernii\/signin.php?error=unauthorized&redirect=maintenance.php"
+            },
+            {
+                "time": "Tue Nov 11 18:57:42.793906 2025",
+                "ip": "10.212.134.2:55937",
+                "error": "PHP Warning:  include(): Failed opening '\/home\/achernii\/public_html\/..\/components\/footer.php' for inclusion (include_path='.:\/usr\/share\/php7:\/usr\/share\/php7\/PEAR') in \/home\/achernii\/public_html\/signup.php on line 63, referer: http:\/\/10.60.36.1\/~achernii\/signin.php?error=unauthorized&redirect=maintenance.php"
+            },
+            {
+                "time": "Thu Nov 13 19:58:03.385997 2025",
+                "ip": "10.212.134.2:62200",
+                "error": "PHP Warning:  include(\/home\/achernii\/public_html\/logger\/logger.php): failed to open stream: Permission denied in \/home\/achernii\/public_html\/index.php on line 1, referer: http:\/\/10.60.36.1\/~achernii\/index.php"
+            },
+            {
+                "time": "Thu Nov 13 19:58:03.386027 2025",
+                "ip": "10.212.134.2:62200",
+                "error": "PHP Warning:  include(): Failed opening '\/home\/achernii\/public_html\/logger\/logger.php' for inclusion (include_path='.:\/usr\/share\/php7:\/usr\/share\/php7\/PEAR') in \/home\/achernii\/public_html\/index.php on line 1, referer: http:\/\/10.60.36.1\/~achernii\/index.php"
+            },
+            {
+                "time": "Thu Nov 13 19:58:06.432802 2025",
+                "ip": "10.212.134.2:53854",
+                "error": "PHP Warning:  include(\/home\/achernii\/public_html\/logger\/logger.php): failed to open stream: Permission denied in \/home\/achernii\/public_html\/index.php on line 1, referer: http:\/\/10.60.36.1\/~achernii\/index.php"
+            },
+            {
+                "time": "Thu Nov 13 19:58:06.432827 2025",
+                "ip": "10.212.134.2:53854",
+                "error": "PHP Warning:  include(): Failed opening '\/home\/achernii\/public_html\/logger\/logger.php' for inclusion (include_path='.:\/usr\/share\/php7:\/usr\/share\/php7\/PEAR') in \/home\/achernii\/public_html\/index.php on line 1, referer: http:\/\/10.60.36.1\/~achernii\/index.php"
+            },
+            {
+                "time": "Thu Nov 13 19:58:09.630172 2025",
+                "ip": "10.212.134.2:51415",
+                "error": "PHP Warning:  include(\/home\/achernii\/public_html\/logger\/logger.php): failed to open stream: Permission denied in \/home\/achernii\/public_html\/maintenance.php on line 1, referer: http:\/\/10.60.36.1\/~achernii\/index.php"
+            },
+            {
+                "time": "Thu Nov 13 19:58:09.630206 2025",
+                "ip": "10.212.134.2:51415",
+                "error": "PHP Warning:  include(): Failed opening '\/home\/achernii\/public_html\/logger\/logger.php' for inclusion (include_path='.:\/usr\/share\/php7:\/usr\/share\/php7\/PEAR') in \/home\/achernii\/public_html\/maintenance.php on line 1, referer: http:\/\/10.60.36.1\/~achernii\/index.php"
+            },
+            {
+                "time": "Thu Nov 13 19:58:09.637214 2025",
+                "ip": "10.212.134.2:51415",
+                "error": "PHP Warning:  include(\/home\/achernii\/public_html\/logger\/logger.php): failed to open stream: Permission denied in \/home\/achernii\/public_html\/signin_page.php on line 1, referer: http:\/\/10.60.36.1\/~achernii\/index.php"
+            },
+            {
+                "time": "Thu Nov 13 19:58:09.637226 2025",
+                "ip": "10.212.134.2:51415",
+                "error": "PHP Warning:  include(): Failed opening '\/home\/achernii\/public_html\/logger\/logger.php' for inclusion (include_path='.:\/usr\/share\/php7:\/usr\/share\/php7\/PEAR') in \/home\/achernii\/public_html\/signin_page.php on line 1, referer: http:\/\/10.60.36.1\/~achernii\/index.php"
+            },
+            {
+                "time": "Thu Nov 13 19:58:11.230450 2025",
+                "ip": "10.212.134.2:53854",
+                "error": "PHP Warning:  include(\/home\/achernii\/public_html\/logger\/logger.php): failed to open stream: Permission denied in \/home\/achernii\/public_html\/queries.php on line 1, referer: http:\/\/10.60.36.1\/~achernii\/signin_page.php?error=unauthorized&redirect=maintenance.php"
+            },
+            {
+                "time": "Thu Nov 13 19:58:11.230474 2025",
+                "ip": "10.212.134.2:53854",
+                "error": "PHP Warning:  include(): Failed opening '\/home\/achernii\/public_html\/logger\/logger.php' for inclusion (include_path='.:\/usr\/share\/php7:\/usr\/share\/php7\/PEAR') in \/home\/achernii\/public_html\/queries.php on line 1, referer: http:\/\/10.60.36.1\/~achernii\/signin_page.php?error=unauthorized&redirect=maintenance.php"
+            },
+            {
+                "time": "Thu Nov 13 19:58:12.036792 2025",
+                "ip": "10.212.134.2:51415",
+                "error": "PHP Warning:  include(\/home\/achernii\/public_html\/logger\/logger.php): failed to open stream: Permission denied in \/home\/achernii\/public_html\/maintenance.php on line 1, referer: http:\/\/10.60.36.1\/~achernii\/queries.php"
+            },
+            {
+                "time": "Thu Nov 13 19:58:12.036816 2025",
+                "ip": "10.212.134.2:51415",
+                "error": "PHP Warning:  include(): Failed opening '\/home\/achernii\/public_html\/logger\/logger.php' for inclusion (include_path='.:\/usr\/share\/php7:\/usr\/share\/php7\/PEAR') in \/home\/achernii\/public_html\/maintenance.php on line 1, referer: http:\/\/10.60.36.1\/~achernii\/queries.php"
+            },
+            {
+                "time": "Thu Nov 13 19:58:12.044266 2025",
+                "ip": "10.212.134.2:51415",
+                "error": "PHP Warning:  include(\/home\/achernii\/public_html\/logger\/logger.php): failed to open stream: Permission denied in \/home\/achernii\/public_html\/signin_page.php on line 1, referer: http:\/\/10.60.36.1\/~achernii\/queries.php"
+            },
+            {
+                "time": "Thu Nov 13 19:58:12.044277 2025",
+                "ip": "10.212.134.2:51415",
+                "error": "PHP Warning:  include(): Failed opening '\/home\/achernii\/public_html\/logger\/logger.php' for inclusion (include_path='.:\/usr\/share\/php7:\/usr\/share\/php7\/PEAR') in \/home\/achernii\/public_html\/signin_page.php on line 1, referer: http:\/\/10.60.36.1\/~achernii\/queries.php"
+            },
+            {
+                "time": "Thu Nov 13 19:58:18.823079 2025",
+                "ip": "10.212.134.2:53854",
+                "error": "PHP Warning:  include(\/home\/achernii\/public_html\/logger\/logger.php): failed to open stream: Permission denied in \/home\/achernii\/public_html\/maintenance.php on line 1, referer: http:\/\/10.60.36.1\/~achernii\/signin_page.php?error=unauthorized&redirect=maintenance.php"
+            },
+            {
+                "time": "Thu Nov 13 19:58:18.823095 2025",
+                "ip": "10.212.134.2:53854",
+                "error": "PHP Warning:  include(): Failed opening '\/home\/achernii\/public_html\/logger\/logger.php' for inclusion (include_path='.:\/usr\/share\/php7:\/usr\/share\/php7\/PEAR') in \/home\/achernii\/public_html\/maintenance.php on line 1, referer: http:\/\/10.60.36.1\/~achernii\/signin_page.php?error=unauthorized&redirect=maintenance.php"
+            },
+            {
+                "time": "Thu Nov 13 19:58:24.004188 2025",
+                "ip": "10.212.134.2:62200",
+                "error": "PHP Warning:  include(\/home\/achernii\/public_html\/logger\/logger.php): failed to open stream: Permission denied in \/home\/achernii\/public_html\/index.php on line 1, referer: http:\/\/10.60.36.1\/~achernii\/maintenance.php"
+            },
+            {
+                "time": "Thu Nov 13 19:58:24.004205 2025",
+                "ip": "10.212.134.2:62200",
+                "error": "PHP Warning:  include(): Failed opening '\/home\/achernii\/public_html\/logger\/logger.php' for inclusion (include_path='.:\/usr\/share\/php7:\/usr\/share\/php7\/PEAR') in \/home\/achernii\/public_html\/index.php on line 1, referer: http:\/\/10.60.36.1\/~achernii\/maintenance.php"
+            },
+            {
+                "time": "Thu Nov 13 19:59:22.854056 2025",
+                "ip": "10.212.134.2:64727",
+                "error": "PHP Warning:  file_put_contents(\/home\/achernii\/public_html\/logger\/error_logs.txt): failed to open stream: Permission denied in \/home\/achernii\/public_html\/logger\/logger.php on line 7, referer: http:\/\/10.60.36.1\/~achernii\/maintenance.php"
+            },
+            {
+                "time": "Thu Nov 13 19:59:25.039345 2025",
+                "ip": "10.212.134.2:54277",
+                "error": "PHP Warning:  file_put_contents(\/home\/achernii\/public_html\/logger\/error_logs.txt): failed to open stream: Permission denied in \/home\/achernii\/public_html\/logger\/logger.php on line 7, referer: http:\/\/10.60.36.1\/~achernii\/index.php"
+            },
+            {
+                "time": "Thu Nov 13 19:59:25.893540 2025",
+                "ip": "10.212.134.2:64727",
+                "error": "PHP Warning:  file_put_contents(\/home\/achernii\/public_html\/logger\/error_logs.txt): failed to open stream: Permission denied in \/home\/achernii\/public_html\/logger\/logger.php on line 7, referer: http:\/\/10.60.36.1\/~achernii\/index.php"
+            },
+            {
+                "time": "Thu Nov 13 19:59:25.905862 2025",
+                "ip": "10.212.134.2:64727",
+                "error": "PHP Warning:  file_put_contents(\/home\/achernii\/public_html\/logger\/error_logs.txt): failed to open stream: Permission denied in \/home\/achernii\/public_html\/logger\/logger.php on line 7, referer: http:\/\/10.60.36.1\/~achernii\/index.php"
+            },
+            {
+                "time": "Thu Nov 13 19:59:26.449425 2025",
+                "ip": "10.212.134.2:57017",
+                "error": "PHP Warning:  file_put_contents(\/home\/achernii\/public_html\/logger\/error_logs.txt): failed to open stream: Permission denied in \/home\/achernii\/public_html\/logger\/logger.php on line 7, referer: http:\/\/10.60.36.1\/~achernii\/signin_page.php?error=unauthorized&redirect=maintenance.php"
+            },
+            {
+                "time": "Thu Nov 13 19:59:27.227617 2025",
+                "ip": "10.212.134.2:64727",
+                "error": "PHP Warning:  file_put_contents(\/home\/achernii\/public_html\/logger\/error_logs.txt): failed to open stream: Permission denied in \/home\/achernii\/public_html\/logger\/logger.php on line 7, referer: http:\/\/10.60.36.1\/~achernii\/queries.php"
+            },
+            {
+                "time": "Thu Nov 13 19:59:27.263389 2025",
+                "ip": "10.212.134.2:64727",
+                "error": "PHP Warning:  file_put_contents(\/home\/achernii\/public_html\/logger\/error_logs.txt): failed to open stream: Permission denied in \/home\/achernii\/public_html\/logger\/logger.php on line 7, referer: http:\/\/10.60.36.1\/~achernii\/queries.php"
+            },
+            {
+                "time": "Thu Nov 13 19:59:28.807584 2025",
+                "ip": "10.212.134.2:54277",
+                "error": "PHP Warning:  file_put_contents(\/home\/achernii\/public_html\/logger\/error_logs.txt): failed to open stream: Permission denied in \/home\/achernii\/public_html\/logger\/logger.php on line 7, referer: http:\/\/10.60.36.1\/~achernii\/signin_page.php?error=unauthorized&redirect=maintenance.php"
+            },
+            {
+                "time": "Thu Nov 13 19:59:51.721854 2025",
+                "ip": "10.212.134.2:57017",
+                "error": "PHP Warning:  file_put_contents(\/home\/achernii\/public_html\/logger\/error_logs.txt): failed to open stream: Permission denied in \/home\/achernii\/public_html\/logger\/logger.php on line 7, referer: http:\/\/10.60.36.1\/~achernii\/signin_page.php?error=unauthorized&redirect=maintenance.php"
+            },
+            {
+                "time": "Thu Nov 13 20:01:01.651283 2025",
+                "ip": "10.212.134.2:56318",
+                "error": "PHP Warning:  file_put_contents(\/home\/achernii\/public_html\/logger\/error_logs.txt): failed to open stream: Permission denied in \/home\/achernii\/public_html\/logger\/logger.php on line 7, referer: http:\/\/10.60.36.1\/~achernii\/index.php"
+            },
+            {
+                "time": "Thu Nov 13 20:01:02.876829 2025",
+                "ip": "10.212.134.2:56066",
+                "error": "PHP Warning:  file_put_contents(\/home\/achernii\/public_html\/logger\/error_logs.txt): failed to open stream: Permission denied in \/home\/achernii\/public_html\/logger\/logger.php on line 7, referer: http:\/\/10.60.36.1\/~achernii\/imprint.php"
+            },
+            {
+                "time": "Thu Nov 13 20:04:27.708110 2025",
+                "ip": "10.212.134.2:55298",
+                "error": "script '\/home\/achernii\/public_html\/signin.php' not found or unable to stat, referer: http:\/\/10.60.36.1\/~achernii\/signup.php"
+            },
+            {
+                "time": "Thu Nov 13 20:04:33.621222 2025",
+                "ip": "10.212.134.2:55298",
+                "error": "script '\/home\/achernii\/public_html\/signin.php' not found or unable to stat, referer: http:\/\/10.60.36.1\/~achernii\/signup.php"
+            },
+            {
+                "time": "Thu Nov 13 23:39:26.283036 2025",
+                "ip": "10.212.134.2:64461",
+                "error": "script '\/home\/achernii\/public_html\/signin.php' not found or unable to stat, referer: http:\/\/10.60.36.1\/~achernii\/signup.php"
+            }
+        ]
+    },
+    "raw_logs": {
+        "access": [
+            "10.212.134.2 - - [13\/Nov\/2025:23:39:04 +0100] \"GET \/~achernii\/js\/theme.js HTTP\/1.1\" 304 - \"http:\/\/10.60.36.1\/~achernii\/index.php\" \"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/142.0.0.0 Safari\/537.36 Edg\/142.0.0.0\"",
+            "10.212.134.2 - - [13\/Nov\/2025:23:39:04 +0100] \"GET \/~achernii\/api\/signin.php?action=check_signin HTTP\/1.1\" 200 33 \"http:\/\/10.60.36.1\/~achernii\/index.php\" \"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/142.0.0.0 Safari\/537.36 Edg\/142.0.0.0\"",
+            "10.212.134.2 - - [13\/Nov\/2025:23:39:04 +0100] \"GET \/~achernii\/api\/signin.php?action=check_signin HTTP\/1.1\" 200 33 \"http:\/\/10.60.36.1\/~achernii\/index.php\" \"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/142.0.0.0 Safari\/537.36 Edg\/142.0.0.0\"",
+            "10.212.134.2 - - [13\/Nov\/2025:23:39:05 +0100] \"GET \/~achernii\/index.php HTTP\/1.1\" 200 8505 \"http:\/\/10.60.36.1\/~achernii\/index.php\" \"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/142.0.0.0 Safari\/537.36 Edg\/142.0.0.0\"",
+            "10.212.134.2 - - [13\/Nov\/2025:23:39:05 +0100] \"GET \/~achernii\/api\/signin.php?action=check_signin HTTP\/1.1\" 200 33 \"http:\/\/10.60.36.1\/~achernii\/index.php\" \"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/142.0.0.0 Safari\/537.36 Edg\/142.0.0.0\"",
+            "10.212.134.2 - - [13\/Nov\/2025:23:39:05 +0100] \"GET \/~achernii\/api\/signin.php?action=check_signin HTTP\/1.1\" 200 33 \"http:\/\/10.60.36.1\/~achernii\/index.php\" \"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/142.0.0.0 Safari\/537.36 Edg\/142.0.0.0\"",
+            "10.212.134.2 - - [13\/Nov\/2025:23:39:06 +0100] \"GET \/~achernii\/imprint.php HTTP\/1.1\" 200 5852 \"http:\/\/10.60.36.1\/~achernii\/index.php\" \"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/142.0.0.0 Safari\/537.36 Edg\/142.0.0.0\"",
+            "10.212.134.2 - - [13\/Nov\/2025:23:39:06 +0100] \"GET \/~achernii\/api\/signin.php?action=check_signin HTTP\/1.1\" 200 33 \"http:\/\/10.60.36.1\/~achernii\/imprint.php\" \"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/142.0.0.0 Safari\/537.36 Edg\/142.0.0.0\"",
+            "10.212.134.2 - - [13\/Nov\/2025:23:39:06 +0100] \"GET \/~achernii\/api\/signin.php?action=check_signin HTTP\/1.1\" 200 33 \"http:\/\/10.60.36.1\/~achernii\/imprint.php\" \"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/142.0.0.0 Safari\/537.36 Edg\/142.0.0.0\"",
+            "10.212.134.2 - - [13\/Nov\/2025:23:39:07 +0100] \"GET \/~achernii\/signup.php HTTP\/1.1\" 200 8374 \"http:\/\/10.60.36.1\/~achernii\/imprint.php\" \"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/142.0.0.0 Safari\/537.36 Edg\/142.0.0.0\"",
+            "10.212.134.2 - - [13\/Nov\/2025:23:39:07 +0100] \"GET \/~achernii\/api\/signin.php?action=check_signin HTTP\/1.1\" 200 33 \"http:\/\/10.60.36.1\/~achernii\/signup.php\" \"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/142.0.0.0 Safari\/537.36 Edg\/142.0.0.0\"",
+            "10.212.134.2 - - [13\/Nov\/2025:23:39:07 +0100] \"GET \/~achernii\/api\/signin.php?action=check_signin HTTP\/1.1\" 200 33 \"http:\/\/10.60.36.1\/~achernii\/signup.php\" \"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/142.0.0.0 Safari\/537.36 Edg\/142.0.0.0\"",
+            "10.212.134.2 - - [13\/Nov\/2025:23:39:25 +0100] \"POST \/~achernii\/api\/index.php?table=Users HTTP\/1.1\" 200 24 \"http:\/\/10.60.36.1\/~achernii\/signup.php\" \"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/142.0.0.0 Safari\/537.36 Edg\/142.0.0.0\"",
+            "10.212.134.2 - - [13\/Nov\/2025:23:39:25 +0100] \"POST \/~achernii\/api\/index.php?table=RegularUsers HTTP\/1.1\" 200 23 \"http:\/\/10.60.36.1\/~achernii\/signup.php\" \"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/142.0.0.0 Safari\/537.36 Edg\/142.0.0.0\"",
+            "10.212.134.2 - - [13\/Nov\/2025:23:39:26 +0100] \"GET \/~achernii\/signin.php HTTP\/1.1\" 404 1143 \"http:\/\/10.60.36.1\/~achernii\/signup.php\" \"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/142.0.0.0 Safari\/537.36 Edg\/142.0.0.0\"",
+            "10.212.134.2 - - [13\/Nov\/2025:23:39:31 +0100] \"GET \/~achernii\/signin_page.php HTTP\/1.1\" 200 7174 \"-\" \"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/142.0.0.0 Safari\/537.36 Edg\/142.0.0.0\"",
+            "10.212.134.2 - - [13\/Nov\/2025:23:39:31 +0100] \"GET \/~achernii\/api\/signin.php?action=check_signin HTTP\/1.1\" 200 33 \"http:\/\/10.60.36.1\/~achernii\/signin_page.php\" \"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/142.0.0.0 Safari\/537.36 Edg\/142.0.0.0\"",
+            "10.212.134.2 - - [13\/Nov\/2025:23:39:31 +0100] \"GET \/~achernii\/api\/signin.php?action=check_signin HTTP\/1.1\" 200 33 \"http:\/\/10.60.36.1\/~achernii\/signin_page.php\" \"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/142.0.0.0 Safari\/537.36 Edg\/142.0.0.0\"",
+            "10.212.134.2 - - [13\/Nov\/2025:23:39:36 +0100] \"POST \/~achernii\/api\/signin.php?action=signin HTTP\/1.1\" 200 60 \"http:\/\/10.60.36.1\/~achernii\/signin_page.php\" \"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/142.0.0.0 Safari\/537.36 Edg\/142.0.0.0\"",
+            "10.212.134.2 - - [13\/Nov\/2025:23:39:36 +0100] \"GET \/~achernii\/index.php HTTP\/1.1\" 200 8505 \"http:\/\/10.60.36.1\/~achernii\/signin_page.php\" \"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/142.0.0.0 Safari\/537.36 Edg\/142.0.0.0\"",
+            "10.212.134.2 - - [13\/Nov\/2025:23:39:36 +0100] \"GET \/~achernii\/api\/signin.php?action=check_signin HTTP\/1.1\" 200 55 \"http:\/\/10.60.36.1\/~achernii\/index.php\" \"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/142.0.0.0 Safari\/537.36 Edg\/142.0.0.0\"",
+            "10.212.134.2 - - [13\/Nov\/2025:23:39:36 +0100] \"GET \/~achernii\/api\/signin.php?action=check_signin HTTP\/1.1\" 200 55 \"http:\/\/10.60.36.1\/~achernii\/index.php\" \"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/142.0.0.0 Safari\/537.36 Edg\/142.0.0.0\"",
+            "10.212.134.2 - - [13\/Nov\/2025:23:39:37 +0100] \"GET \/~achernii\/maintenance.php HTTP\/1.1\" 200 5542 \"http:\/\/10.60.36.1\/~achernii\/index.php\" \"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/142.0.0.0 Safari\/537.36 Edg\/142.0.0.0\"",
+            "10.212.134.2 - - [13\/Nov\/2025:23:39:37 +0100] \"GET \/~achernii\/api\/signin.php?action=check_signin HTTP\/1.1\" 200 55 \"http:\/\/10.60.36.1\/~achernii\/maintenance.php\" \"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/142.0.0.0 Safari\/537.36 Edg\/142.0.0.0\"",
+            "10.212.134.2 - - [13\/Nov\/2025:23:39:37 +0100] \"GET \/~achernii\/api\/signin.php?action=check_signin HTTP\/1.1\" 200 55 \"http:\/\/10.60.36.1\/~achernii\/maintenance.php\" \"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/142.0.0.0 Safari\/537.36 Edg\/142.0.0.0\"",
+            "10.212.134.2 - - [13\/Nov\/2025:23:39:40 +0100] \"GET \/~achernii\/add\/thread.php HTTP\/1.1\" 200 8952 \"http:\/\/10.60.36.1\/~achernii\/maintenance.php\" \"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/142.0.0.0 Safari\/537.36 Edg\/142.0.0.0\"",
+            "10.212.134.2 - - [13\/Nov\/2025:23:39:40 +0100] \"GET \/~achernii\/api\/signin.php?action=check_signin HTTP\/1.1\" 200 55 \"http:\/\/10.60.36.1\/~achernii\/add\/thread.php\" \"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/142.0.0.0 Safari\/537.36 Edg\/142.0.0.0\"",
+            "10.212.134.2 - - [13\/Nov\/2025:23:39:40 +0100] \"GET \/~achernii\/api\/index.php?table=Users HTTP\/1.1\" 200 1303 \"http:\/\/10.60.36.1\/~achernii\/add\/thread.php\" \"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/142.0.0.0 Safari\/537.36 Edg\/142.0.0.0\"",
+            "10.212.134.2 - - [13\/Nov\/2025:23:39:40 +0100] \"GET \/~achernii\/api\/signin.php?action=check_signin HTTP\/1.1\" 200 55 \"http:\/\/10.60.36.1\/~achernii\/add\/thread.php\" \"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/142.0.0.0 Safari\/537.36 Edg\/142.0.0.0\"",
+            "10.212.134.2 - - [13\/Nov\/2025:23:39:40 +0100] \"GET \/~achernii\/img\/select-arrow.svg HTTP\/1.1\" 200 331 \"http:\/\/10.60.36.1\/~achernii\/css\/style.css\" \"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/142.0.0.0 Safari\/537.36 Edg\/142.0.0.0\"",
+            "10.212.134.2 - - [13\/Nov\/2025:23:39:59 +0100] \"POST \/~achernii\/api\/index.php?table=Posts HTTP\/1.1\" 200 23 \"http:\/\/10.60.36.1\/~achernii\/add\/thread.php\" \"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/142.0.0.0 Safari\/537.36 Edg\/142.0.0.0\"",
+            "10.212.134.2 - - [13\/Nov\/2025:23:39:59 +0100] \"POST \/~achernii\/api\/index.php?table=Threads HTTP\/1.1\" 200 23 \"http:\/\/10.60.36.1\/~achernii\/add\/thread.php\" \"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/142.0.0.0 Safari\/537.36 Edg\/142.0.0.0\"",
+            "10.212.134.2 - - [13\/Nov\/2025:23:39:59 +0100] \"GET \/~achernii\/add\/feedback.php?status=success&message=Thread%20added%20successfully!&id=7 HTTP\/1.1\" 200 6385 \"http:\/\/10.60.36.1\/~achernii\/add\/thread.php\" \"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/142.0.0.0 Safari\/537.36 Edg\/142.0.0.0\"",
+            "10.212.134.2 - - [13\/Nov\/2025:23:39:59 +0100] \"GET \/~achernii\/api\/signin.php?action=check_signin HTTP\/1.1\" 200 55 \"http:\/\/10.60.36.1\/~achernii\/add\/feedback.php?status=success&message=Thread%20added%20successfully!&id=7\" \"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/142.0.0.0 Safari\/537.36 Edg\/142.0.0.0\"",
+            "10.212.134.2 - - [13\/Nov\/2025:23:39:59 +0100] \"GET \/~achernii\/api\/signin.php?action=check_signin HTTP\/1.1\" 200 55 \"http:\/\/10.60.36.1\/~achernii\/add\/feedback.php?status=success&message=Thread%20added%20successfully!&id=7\" \"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/142.0.0.0 Safari\/537.36 Edg\/142.0.0.0\"",
+            "10.212.134.2 - - [13\/Nov\/2025:23:40:01 +0100] \"GET \/~achernii\/maintenance.php HTTP\/1.1\" 200 5542 \"http:\/\/10.60.36.1\/~achernii\/add\/feedback.php?status=success&message=Thread%20added%20successfully!&id=7\" \"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/142.0.0.0 Safari\/537.36 Edg\/142.0.0.0\"",
+            "10.212.134.2 - - [13\/Nov\/2025:23:40:01 +0100] \"GET \/~achernii\/api\/signin.php?action=check_signin HTTP\/1.1\" 200 55 \"http:\/\/10.60.36.1\/~achernii\/maintenance.php\" \"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/142.0.0.0 Safari\/537.36 Edg\/142.0.0.0\"",
+            "10.212.134.2 - - [13\/Nov\/2025:23:40:01 +0100] \"GET \/~achernii\/api\/signin.php?action=check_signin HTTP\/1.1\" 200 55 \"http:\/\/10.60.36.1\/~achernii\/maintenance.php\" \"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/142.0.0.0 Safari\/537.36 Edg\/142.0.0.0\"",
+            "10.212.134.2 - - [13\/Nov\/2025:23:40:01 +0100] \"GET \/~achernii\/queries.php HTTP\/1.1\" 200 4821 \"http:\/\/10.60.36.1\/~achernii\/maintenance.php\" \"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/142.0.0.0 Safari\/537.36 Edg\/142.0.0.0\"",
+            "10.212.134.2 - - [13\/Nov\/2025:23:40:01 +0100] \"GET \/~achernii\/api\/signin.php?action=check_signin HTTP\/1.1\" 200 55 \"http:\/\/10.60.36.1\/~achernii\/queries.php\" \"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/142.0.0.0 Safari\/537.36 Edg\/142.0.0.0\"",
+            "10.212.134.2 - - [13\/Nov\/2025:23:40:01 +0100] \"GET \/~achernii\/api\/signin.php?action=check_signin HTTP\/1.1\" 200 55 \"http:\/\/10.60.36.1\/~achernii\/queries.php\" \"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/142.0.0.0 Safari\/537.36 Edg\/142.0.0.0\"",
+            "10.212.134.2 - - [13\/Nov\/2025:23:40:02 +0100] \"GET \/~achernii\/query\/reported_posts.php HTTP\/1.1\" 200 6956 \"http:\/\/10.60.36.1\/~achernii\/queries.php\" \"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/142.0.0.0 Safari\/537.36 Edg\/142.0.0.0\"",
+            "10.212.134.2 - - [13\/Nov\/2025:23:40:02 +0100] \"GET \/~achernii\/api\/signin.php?action=check_signin HTTP\/1.1\" 200 55 \"http:\/\/10.60.36.1\/~achernii\/query\/reported_posts.php\" \"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/142.0.0.0 Safari\/537.36 Edg\/142.0.0.0\"",
+            "10.212.134.2 - - [13\/Nov\/2025:23:40:02 +0100] \"GET \/~achernii\/api\/signin.php?action=check_signin HTTP\/1.1\" 200 55 \"http:\/\/10.60.36.1\/~achernii\/query\/reported_posts.php\" \"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/142.0.0.0 Safari\/537.36 Edg\/142.0.0.0\"",
+            "10.212.134.2 - - [13\/Nov\/2025:23:40:05 +0100] \"GET \/~achernii\/queries.php HTTP\/1.1\" 200 4821 \"http:\/\/10.60.36.1\/~achernii\/query\/reported_posts.php\" \"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/142.0.0.0 Safari\/537.36 Edg\/142.0.0.0\"",
+            "10.212.134.2 - - [13\/Nov\/2025:23:40:05 +0100] \"GET \/~achernii\/api\/signin.php?action=check_signin HTTP\/1.1\" 200 55 \"http:\/\/10.60.36.1\/~achernii\/queries.php\" \"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/142.0.0.0 Safari\/537.36 Edg\/142.0.0.0\"",
+            "10.212.134.2 - - [13\/Nov\/2025:23:40:05 +0100] \"GET \/~achernii\/api\/signin.php?action=check_signin HTTP\/1.1\" 200 55 \"http:\/\/10.60.36.1\/~achernii\/queries.php\" \"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/142.0.0.0 Safari\/537.36 Edg\/142.0.0.0\"",
+            "10.212.134.2 - - [13\/Nov\/2025:23:40:05 +0100] \"GET \/~achernii\/query\/most_liked_threads.php HTTP\/1.1\" 200 6361 \"http:\/\/10.60.36.1\/~achernii\/queries.php\" \"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/142.0.0.0 Safari\/537.36 Edg\/142.0.0.0\"",
+            "10.212.134.2 - - [13\/Nov\/2025:23:40:05 +0100] \"GET \/~achernii\/api\/signin.php?action=check_signin HTTP\/1.1\" 200 55 \"http:\/\/10.60.36.1\/~achernii\/query\/most_liked_threads.php\" \"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/142.0.0.0 Safari\/537.36 Edg\/142.0.0.0\"",
+            "10.212.134.2 - - [13\/Nov\/2025:23:40:05 +0100] \"GET \/~achernii\/api\/signin.php?action=check_signin HTTP\/1.1\" 200 55 \"http:\/\/10.60.36.1\/~achernii\/query\/most_liked_threads.php\" \"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/142.0.0.0 Safari\/537.36 Edg\/142.0.0.0\"",
+            "10.212.134.2 - - [13\/Nov\/2025:23:40:07 +0100] \"GET \/~achernii\/api\/queries.php?query=most_liked_threads&limit=0 HTTP\/1.1\" 200 335 \"http:\/\/10.60.36.1\/~achernii\/query\/most_liked_threads.php\" \"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/142.0.0.0 Safari\/537.36 Edg\/142.0.0.0\"",
+            "10.212.134.2 - - [13\/Nov\/2025:23:40:07 +0100] \"GET \/~achernii\/query\/feedback.php?status=success&message=Query%20executed%20successfully! HTTP\/1.1\" 200 10056 \"http:\/\/10.60.36.1\/~achernii\/query\/most_liked_threads.php\" \"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/142.0.0.0 Safari\/537.36 Edg\/142.0.0.0\"",
+            "10.212.134.2 - - [13\/Nov\/2025:23:40:07 +0100] \"GET \/~achernii\/api\/signin.php?action=check_signin HTTP\/1.1\" 200 55 \"http:\/\/10.60.36.1\/~achernii\/query\/feedback.php?status=success&message=Query%20executed%20successfully!\" \"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/142.0.0.0 Safari\/537.36 Edg\/142.0.0.0\"",
+            "10.212.134.2 - - [13\/Nov\/2025:23:40:07 +0100] \"GET \/~achernii\/api\/signin.php?action=check_signin HTTP\/1.1\" 200 55 \"http:\/\/10.60.36.1\/~achernii\/query\/feedback.php?status=success&message=Query%20executed%20successfully!\" \"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/142.0.0.0 Safari\/537.36 Edg\/142.0.0.0\"",
+            "10.212.134.2 - - [13\/Nov\/2025:23:40:10 +0100] \"GET \/~achernii\/query\/entity_description.php?entity=Threads&id=2&query=Most%20Liked%20Threads&upvote_count=1 HTTP\/1.1\" 200 7099 \"http:\/\/10.60.36.1\/~achernii\/query\/feedback.php?status=success&message=Query%20executed%20successfully!\" \"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/142.0.0.0 Safari\/537.36 Edg\/142.0.0.0\"",
+            "10.212.134.2 - - [13\/Nov\/2025:23:40:10 +0100] \"GET \/~achernii\/api\/signin.php?action=check_signin HTTP\/1.1\" 200 55 \"http:\/\/10.60.36.1\/~achernii\/query\/entity_description.php?entity=Threads&id=2&query=Most%20Liked%20Threads&upvote_count=1\" \"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/142.0.0.0 Safari\/537.36 Edg\/142.0.0.0\"",
+            "10.212.134.2 - - [13\/Nov\/2025:23:40:10 +0100] \"GET \/~achernii\/api\/index.php?table=Threads&id=2 HTTP\/1.1\" 200 42 \"http:\/\/10.60.36.1\/~achernii\/query\/entity_description.php?entity=Threads&id=2&query=Most%20Liked%20Threads&upvote_count=1\" \"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/142.0.0.0 Safari\/537.36 Edg\/142.0.0.0\"",
+            "10.212.134.2 - - [13\/Nov\/2025:23:40:10 +0100] \"GET \/~achernii\/api\/signin.php?action=check_signin HTTP\/1.1\" 200 55 \"http:\/\/10.60.36.1\/~achernii\/query\/entity_description.php?entity=Threads&id=2&query=Most%20Liked%20Threads&upvote_count=1\" \"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/142.0.0.0 Safari\/537.36 Edg\/142.0.0.0\"",
+            "10.212.134.2 - - [13\/Nov\/2025:23:40:12 +0100] \"GET \/~achernii\/queries.php HTTP\/1.1\" 200 4821 \"http:\/\/10.60.36.1\/~achernii\/query\/entity_description.php?entity=Threads&id=2&query=Most%20Liked%20Threads&upvote_count=1\" \"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/142.0.0.0 Safari\/537.36 Edg\/142.0.0.0\"",
+            "10.212.134.2 - - [13\/Nov\/2025:23:40:12 +0100] \"GET \/~achernii\/api\/signin.php?action=check_signin HTTP\/1.1\" 200 55 \"http:\/\/10.60.36.1\/~achernii\/queries.php\" \"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/142.0.0.0 Safari\/537.36 Edg\/142.0.0.0\"",
+            "10.212.134.2 - - [13\/Nov\/2025:23:40:12 +0100] \"GET \/~achernii\/api\/signin.php?action=check_signin HTTP\/1.1\" 200 55 \"http:\/\/10.60.36.1\/~achernii\/queries.php\" \"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/142.0.0.0 Safari\/537.36 Edg\/142.0.0.0\"",
+            "10.212.134.2 - - [13\/Nov\/2025:23:40:17 +0100] \"GET \/~achernii\/maintenance.php HTTP\/1.1\" 302 - \"http:\/\/10.60.36.1\/~achernii\/index.php\" \"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/142.0.0.0 Safari\/537.36\"",
+            "10.212.134.2 - - [13\/Nov\/2025:23:40:17 +0100] \"GET \/~achernii\/signin_page.php?error=unauthorized&redirect=maintenance.php HTTP\/1.1\" 200 7174 \"http:\/\/10.60.36.1\/~achernii\/index.php\" \"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/142.0.0.0 Safari\/537.36\"",
+            "10.212.134.2 - - [13\/Nov\/2025:23:40:18 +0100] \"GET \/~achernii\/css\/style.css HTTP\/1.1\" 304 - \"http:\/\/10.60.36.1\/~achernii\/signin_page.php?error=unauthorized&redirect=maintenance.php\" \"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/142.0.0.0 Safari\/537.36\"",
+            "10.212.134.2 - - [13\/Nov\/2025:23:40:18 +0100] \"GET \/~achernii\/img\/logo.png HTTP\/1.1\" 304 - \"http:\/\/10.60.36.1\/~achernii\/signin_page.php?error=unauthorized&redirect=maintenance.php\" \"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/142.0.0.0 Safari\/537.36\"",
+            "10.212.134.2 - - [13\/Nov\/2025:23:40:18 +0100] \"GET \/~achernii\/js\/auth_tools.js HTTP\/1.1\" 304 - \"http:\/\/10.60.36.1\/~achernii\/signin_page.php?error=unauthorized&redirect=maintenance.php\" \"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/142.0.0.0 Safari\/537.36\"",
+            "10.212.134.2 - - [13\/Nov\/2025:23:40:18 +0100] \"GET \/~achernii\/js\/theme.js HTTP\/1.1\" 304 - \"http:\/\/10.60.36.1\/~achernii\/signin_page.php?error=unauthorized&redirect=maintenance.php\" \"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/142.0.0.0 Safari\/537.36\"",
+            "10.212.134.2 - - [13\/Nov\/2025:23:40:18 +0100] \"GET \/~achernii\/api\/signin.php?action=check_signin HTTP\/1.1\" 200 33 \"http:\/\/10.60.36.1\/~achernii\/signin_page.php?error=unauthorized&redirect=maintenance.php\" \"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/142.0.0.0 Safari\/537.36\"",
+            "10.212.134.2 - - [13\/Nov\/2025:23:40:18 +0100] \"GET \/~achernii\/api\/signin.php?action=check_signin HTTP\/1.1\" 200 33 \"http:\/\/10.60.36.1\/~achernii\/signin_page.php?error=unauthorized&redirect=maintenance.php\" \"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/142.0.0.0 Safari\/537.36\"",
+            "10.212.134.2 - - [13\/Nov\/2025:23:40:18 +0100] \"GET \/~achernii\/queries.php HTTP\/1.1\" 200 4821 \"http:\/\/10.60.36.1\/~achernii\/signin_page.php?error=unauthorized&redirect=maintenance.php\" \"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/142.0.0.0 Safari\/537.36\"",
+            "10.212.134.2 - - [13\/Nov\/2025:23:40:19 +0100] \"GET \/~achernii\/api\/signin.php?action=check_signin HTTP\/1.1\" 200 33 \"http:\/\/10.60.36.1\/~achernii\/queries.php\" \"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/142.0.0.0 Safari\/537.36\"",
+            "10.212.134.2 - - [13\/Nov\/2025:23:40:19 +0100] \"GET \/~achernii\/api\/signin.php?action=check_signin HTTP\/1.1\" 200 33 \"http:\/\/10.60.36.1\/~achernii\/queries.php\" \"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/142.0.0.0 Safari\/537.36\"",
+            "10.212.134.2 - - [13\/Nov\/2025:23:40:19 +0100] \"GET \/~achernii\/index.php HTTP\/1.1\" 200 8505 \"http:\/\/10.60.36.1\/~achernii\/queries.php\" \"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/142.0.0.0 Safari\/537.36\"",
+            "10.212.134.2 - - [13\/Nov\/2025:23:40:20 +0100] \"GET \/~achernii\/api\/signin.php?action=check_signin HTTP\/1.1\" 200 33 \"http:\/\/10.60.36.1\/~achernii\/index.php\" \"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/142.0.0.0 Safari\/537.36\"",
+            "10.212.134.2 - - [13\/Nov\/2025:23:40:20 +0100] \"GET \/~achernii\/api\/signin.php?action=check_signin HTTP\/1.1\" 200 33 \"http:\/\/10.60.36.1\/~achernii\/index.php\" \"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/142.0.0.0 Safari\/537.36\"",
+            "10.212.134.2 - - [13\/Nov\/2025:23:40:20 +0100] \"GET \/~achernii\/index.php HTTP\/1.1\" 200 8505 \"http:\/\/10.60.36.1\/~achernii\/index.php\" \"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/142.0.0.0 Safari\/537.36\"",
+            "10.212.134.2 - - [13\/Nov\/2025:23:40:20 +0100] \"GET \/~achernii\/api\/signin.php?action=check_signin HTTP\/1.1\" 200 33 \"http:\/\/10.60.36.1\/~achernii\/index.php\" \"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/142.0.0.0 Safari\/537.36\"",
+            "10.212.134.2 - - [13\/Nov\/2025:23:40:20 +0100] \"GET \/~achernii\/api\/signin.php?action=check_signin HTTP\/1.1\" 200 33 \"http:\/\/10.60.36.1\/~achernii\/index.php\" \"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/142.0.0.0 Safari\/537.36\"",
+            "10.212.134.2 - - [13\/Nov\/2025:23:40:21 +0100] \"GET \/~achernii\/imprint.php HTTP\/1.1\" 200 5852 \"http:\/\/10.60.36.1\/~achernii\/index.php\" \"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/142.0.0.0 Safari\/537.36\"",
+            "10.212.134.2 - - [13\/Nov\/2025:23:40:21 +0100] \"GET \/~achernii\/api\/signin.php?action=check_signin HTTP\/1.1\" 200 33 \"http:\/\/10.60.36.1\/~achernii\/imprint.php\" \"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/142.0.0.0 Safari\/537.36\"",
+            "10.212.134.2 - - [13\/Nov\/2025:23:40:21 +0100] \"GET \/~achernii\/api\/signin.php?action=check_signin HTTP\/1.1\" 200 33 \"http:\/\/10.60.36.1\/~achernii\/imprint.php\" \"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/142.0.0.0 Safari\/537.36\"",
+            "10.212.134.2 - - [13\/Nov\/2025:23:40:22 +0100] \"GET \/~achernii\/signin_page.php HTTP\/1.1\" 200 7174 \"http:\/\/10.60.36.1\/~achernii\/imprint.php\" \"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/142.0.0.0 Safari\/537.36\"",
+            "10.212.134.2 - - [13\/Nov\/2025:23:40:23 +0100] \"GET \/~achernii\/api\/signin.php?action=check_signin HTTP\/1.1\" 200 33 \"http:\/\/10.60.36.1\/~achernii\/signin_page.php\" \"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/142.0.0.0 Safari\/537.36\"",
+            "10.212.134.2 - - [13\/Nov\/2025:23:40:23 +0100] \"GET \/~achernii\/api\/signin.php?action=check_signin HTTP\/1.1\" 200 33 \"http:\/\/10.60.36.1\/~achernii\/signin_page.php\" \"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/142.0.0.0 Safari\/537.36\"",
+            "10.212.134.2 - - [13\/Nov\/2025:23:40:29 +0100] \"POST \/~achernii\/api\/signin.php?action=signin HTTP\/1.1\" 200 56 \"http:\/\/10.60.36.1\/~achernii\/signin_page.php\" \"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/142.0.0.0 Safari\/537.36\"",
+            "10.212.134.2 - - [13\/Nov\/2025:23:40:34 +0100] \"POST \/~achernii\/api\/signin.php?action=signin HTTP\/1.1\" 200 55 \"http:\/\/10.60.36.1\/~achernii\/signin_page.php\" \"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/142.0.0.0 Safari\/537.36\"",
+            "10.212.134.2 - - [13\/Nov\/2025:23:40:34 +0100] \"GET \/~achernii\/index.php HTTP\/1.1\" 200 8505 \"http:\/\/10.60.36.1\/~achernii\/signin_page.php\" \"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/142.0.0.0 Safari\/537.36\"",
+            "10.212.134.2 - - [13\/Nov\/2025:23:40:34 +0100] \"GET \/~achernii\/api\/signin.php?action=check_signin HTTP\/1.1\" 200 51 \"http:\/\/10.60.36.1\/~achernii\/index.php\" \"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/142.0.0.0 Safari\/537.36\"",
+            "10.212.134.2 - - [13\/Nov\/2025:23:40:34 +0100] \"GET \/~achernii\/api\/signin.php?action=check_signin HTTP\/1.1\" 200 51 \"http:\/\/10.60.36.1\/~achernii\/index.php\" \"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/142.0.0.0 Safari\/537.36\"",
+            "10.212.134.2 - - [13\/Nov\/2025:23:40:38 +0100] \"GET \/~achernii\/maintenance.php HTTP\/1.1\" 200 5542 \"http:\/\/10.60.36.1\/~achernii\/index.php\" \"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/142.0.0.0 Safari\/537.36\"",
+            "10.212.134.2 - - [13\/Nov\/2025:23:40:38 +0100] \"GET \/~achernii\/api\/signin.php?action=check_signin HTTP\/1.1\" 200 51 \"http:\/\/10.60.36.1\/~achernii\/maintenance.php\" \"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/142.0.0.0 Safari\/537.36\"",
+            "10.212.134.2 - - [13\/Nov\/2025:23:40:38 +0100] \"GET \/~achernii\/api\/signin.php?action=check_signin HTTP\/1.1\" 200 51 \"http:\/\/10.60.36.1\/~achernii\/maintenance.php\" \"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/142.0.0.0 Safari\/537.36\"",
+            "10.212.134.2 - - [13\/Nov\/2025:23:40:39 +0100] \"GET \/~achernii\/queries.php HTTP\/1.1\" 200 4821 \"http:\/\/10.60.36.1\/~achernii\/maintenance.php\" \"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/142.0.0.0 Safari\/537.36\"",
+            "10.212.134.2 - - [13\/Nov\/2025:23:40:39 +0100] \"GET \/~achernii\/api\/signin.php?action=check_signin HTTP\/1.1\" 200 51 \"http:\/\/10.60.36.1\/~achernii\/queries.php\" \"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/142.0.0.0 Safari\/537.36\"",
+            "10.212.134.2 - - [13\/Nov\/2025:23:40:39 +0100] \"GET \/~achernii\/api\/signin.php?action=check_signin HTTP\/1.1\" 200 51 \"http:\/\/10.60.36.1\/~achernii\/queries.php\" \"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/142.0.0.0 Safari\/537.36\"",
+            "10.212.134.2 - - [13\/Nov\/2025:23:40:40 +0100] \"GET \/~achernii\/api\/signin.php?action=signout HTTP\/1.1\" 200 16 \"http:\/\/10.60.36.1\/~achernii\/queries.php\" \"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/142.0.0.0 Safari\/537.36\"",
+            "10.212.134.2 - - [13\/Nov\/2025:23:40:40 +0100] \"GET \/~achernii\/index.php HTTP\/1.1\" 200 8505 \"http:\/\/10.60.36.1\/~achernii\/queries.php\" \"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/142.0.0.0 Safari\/537.36\"",
+            "10.212.134.2 - - [13\/Nov\/2025:23:40:40 +0100] \"GET \/~achernii\/api\/signin.php?action=check_signin HTTP\/1.1\" 200 33 \"http:\/\/10.60.36.1\/~achernii\/index.php\" \"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/142.0.0.0 Safari\/537.36\"",
+            "10.212.134.2 - - [13\/Nov\/2025:23:40:40 +0100] \"GET \/~achernii\/api\/signin.php?action=check_signin HTTP\/1.1\" 200 33 \"http:\/\/10.60.36.1\/~achernii\/index.php\" \"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/142.0.0.0 Safari\/537.36\"",
+            "10.212.134.2 - - [13\/Nov\/2025:23:40:48 +0100] \"GET \/~achernii\/test_logger.php?limit=200 HTTP\/1.1\" 200 159525 \"-\" \"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/142.0.0.0 Safari\/537.36\""
+        ],
+        "errors": [
+            "[Thu Nov 06 23:24:05.859608 2025] [php7:error] [pid 18189] [client 172.16.38.16:61381] script '\/home\/achernii\/public_html\/api\/auth.php' not found or unable to stat, referer: http:\/\/10.60.36.1\/~achernii\/signin.html",
+            "[Thu Nov 06 23:24:09.025557 2025] [php7:warn] [pid 18189] [client 172.16.38.16:61381] PHP Warning:  require_once(..\/api\/check_signin.php): failed to open stream: No such file or directory in \/home\/achernii\/public_html\/maintenance.php on line 1, referer: http:\/\/10.60.36.1\/~achernii\/index.html",
+            "[Thu Nov 06 23:24:09.025580 2025] [php7:error] [pid 18189] [client 172.16.38.16:61381] PHP Fatal error:  require_once(): Failed opening required '..\/api\/check_signin.php' (include_path='.:\/usr\/share\/php7:\/usr\/share\/php7\/PEAR') in \/home\/achernii\/public_html\/maintenance.php on line 1, referer: http:\/\/10.60.36.1\/~achernii\/index.html",
+            "[Thu Nov 06 23:25:03.187599 2025] [php7:warn] [pid 18311] [client 172.16.38.16:50678] PHP Warning:  require_once(..\/api\/check_signin.php): failed to open stream: No such file or directory in \/home\/achernii\/public_html\/maintenance.php on line 1, referer: http:\/\/10.60.36.1\/~achernii\/index.html",
+            "[Thu Nov 06 23:25:03.187634 2025] [php7:error] [pid 18311] [client 172.16.38.16:50678] PHP Fatal error:  require_once(): Failed opening required '..\/api\/check_signin.php' (include_path='.:\/usr\/share\/php7:\/usr\/share\/php7\/PEAR') in \/home\/achernii\/public_html\/maintenance.php on line 1, referer: http:\/\/10.60.36.1\/~achernii\/index.html",
+            "[Thu Nov 06 23:25:35.570475 2025] [php7:warn] [pid 26188] [client 172.16.38.16:50583] PHP Warning:  require_once(..\/api\/check_signin.php): failed to open stream: No such file or directory in \/home\/achernii\/public_html\/maintenance.php on line 1, referer: http:\/\/10.60.36.1\/~achernii\/index.html",
+            "[Thu Nov 06 23:25:35.570503 2025] [php7:error] [pid 26188] [client 172.16.38.16:50583] PHP Fatal error:  require_once(): Failed opening required '..\/api\/check_signin.php' (include_path='.:\/usr\/share\/php7:\/usr\/share\/php7\/PEAR') in \/home\/achernii\/public_html\/maintenance.php on line 1, referer: http:\/\/10.60.36.1\/~achernii\/index.html",
+            "[Thu Nov 06 23:27:20.327169 2025] [php7:warn] [pid 26867] [client 172.16.38.16:60634] PHP Warning:  require_once(..\/api\/check_signin.php): failed to open stream: No such file or directory in \/home\/achernii\/public_html\/maintenance.php on line 1, referer: http:\/\/10.60.36.1\/~achernii\/index.html",
+            "[Thu Nov 06 23:27:20.327209 2025] [php7:error] [pid 26867] [client 172.16.38.16:60634] PHP Fatal error:  require_once(): Failed opening required '..\/api\/check_signin.php' (include_path='.:\/usr\/share\/php7:\/usr\/share\/php7\/PEAR') in \/home\/achernii\/public_html\/maintenance.php on line 1, referer: http:\/\/10.60.36.1\/~achernii\/index.html",
+            "[Thu Nov 06 23:27:25.122159 2025] [php7:warn] [pid 18265] [client 172.16.38.16:63519] PHP Warning:  require_once(..\/api\/check_signin.php): failed to open stream: No such file or directory in \/home\/achernii\/public_html\/maintenance.php on line 1, referer: http:\/\/10.60.36.1\/~achernii\/imprint.html",
+            "[Thu Nov 06 23:27:25.122185 2025] [php7:error] [pid 18265] [client 172.16.38.16:63519] PHP Fatal error:  require_once(): Failed opening required '..\/api\/check_signin.php' (include_path='.:\/usr\/share\/php7:\/usr\/share\/php7\/PEAR') in \/home\/achernii\/public_html\/maintenance.php on line 1, referer: http:\/\/10.60.36.1\/~achernii\/imprint.html",
+            "[Thu Nov 06 23:43:28.037411 2025] [php7:error] [pid 17692] [client 172.16.38.16:55378] script '\/home\/achernii\/public_html\/api\/auth.php' not found or unable to stat, referer: http:\/\/10.60.36.1\/~achernii\/signin.html?error=unauthorized&redirect=maintenance.php",
+            "[Thu Nov 06 23:43:29.389347 2025] [php7:error] [pid 17692] [client 172.16.38.16:55378] script '\/home\/achernii\/public_html\/api\/auth.php' not found or unable to stat, referer: http:\/\/10.60.36.1\/~achernii\/signin.html?error=unauthorized&redirect=maintenance.php",
+            "[Thu Nov 06 23:43:41.650244 2025] [php7:error] [pid 17692] [client 172.16.38.16:55378] script '\/home\/achernii\/public_html\/api\/auth.php' not found or unable to stat, referer: http:\/\/10.60.36.1\/~achernii\/signin.html?error=unauthorized&redirect=maintenance.php",
+            "[Tue Nov 11 17:43:09.513504 2025] [php7:warn] [pid 18329] [client 10.212.134.2:62479] PHP Warning:  include(\/~achernii\/components\/head.php): failed to open stream: No such file or directory in \/home\/achernii\/public_html\/index.php on line 3",
+            "[Tue Nov 11 17:43:09.513534 2025] [php7:warn] [pid 18329] [client 10.212.134.2:62479] PHP Warning:  include(): Failed opening '\/~achernii\/components\/head.php' for inclusion (include_path='.:\/usr\/share\/php7:\/usr\/share\/php7\/PEAR') in \/home\/achernii\/public_html\/index.php on line 3",
+            "[Tue Nov 11 17:43:09.513548 2025] [php7:warn] [pid 18329] [client 10.212.134.2:62479] PHP Warning:  include(\/~achernii\/components\/header.php): failed to open stream: No such file or directory in \/home\/achernii\/public_html\/index.php on line 6",
+            "[Tue Nov 11 17:43:09.513552 2025] [php7:warn] [pid 18329] [client 10.212.134.2:62479] PHP Warning:  include(): Failed opening '\/~achernii\/components\/header.php' for inclusion (include_path='.:\/usr\/share\/php7:\/usr\/share\/php7\/PEAR') in \/home\/achernii\/public_html\/index.php on line 6",
+            "[Tue Nov 11 17:43:10.485019 2025] [php7:warn] [pid 18329] [client 10.212.134.2:62479] PHP Warning:  include(\/~achernii\/components\/head.php): failed to open stream: No such file or directory in \/home\/achernii\/public_html\/index.php on line 3",
+            "[Tue Nov 11 17:43:10.485042 2025] [php7:warn] [pid 18329] [client 10.212.134.2:62479] PHP Warning:  include(): Failed opening '\/~achernii\/components\/head.php' for inclusion (include_path='.:\/usr\/share\/php7:\/usr\/share\/php7\/PEAR') in \/home\/achernii\/public_html\/index.php on line 3",
+            "[Tue Nov 11 17:43:10.485064 2025] [php7:warn] [pid 18329] [client 10.212.134.2:62479] PHP Warning:  include(\/~achernii\/components\/header.php): failed to open stream: No such file or directory in \/home\/achernii\/public_html\/index.php on line 6",
+            "[Tue Nov 11 17:43:10.485067 2025] [php7:warn] [pid 18329] [client 10.212.134.2:62479] PHP Warning:  include(): Failed opening '\/~achernii\/components\/header.php' for inclusion (include_path='.:\/usr\/share\/php7:\/usr\/share\/php7\/PEAR') in \/home\/achernii\/public_html\/index.php on line 6",
+            "[Tue Nov 11 17:43:11.000771 2025] [php7:warn] [pid 18329] [client 10.212.134.2:62479] PHP Warning:  include(\/~achernii\/components\/head.php): failed to open stream: No such file or directory in \/home\/achernii\/public_html\/index.php on line 3",
+            "[Tue Nov 11 17:43:11.000794 2025] [php7:warn] [pid 18329] [client 10.212.134.2:62479] PHP Warning:  include(): Failed opening '\/~achernii\/components\/head.php' for inclusion (include_path='.:\/usr\/share\/php7:\/usr\/share\/php7\/PEAR') in \/home\/achernii\/public_html\/index.php on line 3",
+            "[Tue Nov 11 17:43:11.000806 2025] [php7:warn] [pid 18329] [client 10.212.134.2:62479] PHP Warning:  include(\/~achernii\/components\/header.php): failed to open stream: No such file or directory in \/home\/achernii\/public_html\/index.php on line 6",
+            "[Tue Nov 11 17:43:11.000809 2025] [php7:warn] [pid 18329] [client 10.212.134.2:62479] PHP Warning:  include(): Failed opening '\/~achernii\/components\/header.php' for inclusion (include_path='.:\/usr\/share\/php7:\/usr\/share\/php7\/PEAR') in \/home\/achernii\/public_html\/index.php on line 6",
+            "[Tue Nov 11 17:43:11.425974 2025] [php7:warn] [pid 18329] [client 10.212.134.2:62479] PHP Warning:  include(\/~achernii\/components\/head.php): failed to open stream: No such file or directory in \/home\/achernii\/public_html\/index.php on line 3",
+            "[Tue Nov 11 17:43:11.425995 2025] [php7:warn] [pid 18329] [client 10.212.134.2:62479] PHP Warning:  include(): Failed opening '\/~achernii\/components\/head.php' for inclusion (include_path='.:\/usr\/share\/php7:\/usr\/share\/php7\/PEAR') in \/home\/achernii\/public_html\/index.php on line 3",
+            "[Tue Nov 11 17:43:11.426005 2025] [php7:warn] [pid 18329] [client 10.212.134.2:62479] PHP Warning:  include(\/~achernii\/components\/header.php): failed to open stream: No such file or directory in \/home\/achernii\/public_html\/index.php on line 6",
+            "[Tue Nov 11 17:43:11.426009 2025] [php7:warn] [pid 18329] [client 10.212.134.2:62479] PHP Warning:  include(): Failed opening '\/~achernii\/components\/header.php' for inclusion (include_path='.:\/usr\/share\/php7:\/usr\/share\/php7\/PEAR') in \/home\/achernii\/public_html\/index.php on line 6",
+            "[Tue Nov 11 17:56:13.778670 2025] [php7:error] [pid 17386] [client 10.212.134.2:61842] script '\/srv\/www\/htdocs\/index.php' not found or unable to stat, referer: http:\/\/10.60.36.1\/~achernii\/",
+            "[Tue Nov 11 17:56:23.680378 2025] [php7:error] [pid 17386] [client 10.212.134.2:61842] script '\/srv\/www\/htdocs\/imprint.php' not found or unable to stat, referer: http:\/\/10.60.36.1\/~achernii\/",
+            "[Tue Nov 11 17:56:33.464508 2025] [php7:error] [pid 17386] [client 10.212.134.2:61842] script '\/srv\/www\/htdocs\/index.php' not found or unable to stat, referer: http:\/\/10.60.36.1\/~achernii\/",
+            "[Tue Nov 11 18:15:37.132174 2025] [php7:error] [pid 17385] [client 10.212.134.2:56950] script '\/srv\/www\/htdocs\/index.php' not found or unable to stat, referer: http:\/\/10.60.36.1\/~achernii\/index.php",
+            "[Tue Nov 11 18:57:42.793163 2025] [php7:warn] [pid 17692] [client 10.212.134.2:55937] PHP Warning:  include(\/home\/achernii\/public_html\/..\/components\/head.php): failed to open stream: No such file or directory in \/home\/achernii\/public_html\/signup.php on line 3, referer: http:\/\/10.60.36.1\/~achernii\/signin.php?error=unauthorized&redirect=maintenance.php",
+            "[Tue Nov 11 18:57:42.793194 2025] [php7:warn] [pid 17692] [client 10.212.134.2:55937] PHP Warning:  include(): Failed opening '\/home\/achernii\/public_html\/..\/components\/head.php' for inclusion (include_path='.:\/usr\/share\/php7:\/usr\/share\/php7\/PEAR') in \/home\/achernii\/public_html\/signup.php on line 3, referer: http:\/\/10.60.36.1\/~achernii\/signin.php?error=unauthorized&redirect=maintenance.php",
+            "[Tue Nov 11 18:57:42.793211 2025] [php7:warn] [pid 17692] [client 10.212.134.2:55937] PHP Warning:  include(\/home\/achernii\/public_html\/..\/components\/header.php): failed to open stream: No such file or directory in \/home\/achernii\/public_html\/signup.php on line 5, referer: http:\/\/10.60.36.1\/~achernii\/signin.php?error=unauthorized&redirect=maintenance.php",
+            "[Tue Nov 11 18:57:42.793215 2025] [php7:warn] [pid 17692] [client 10.212.134.2:55937] PHP Warning:  include(): Failed opening '\/home\/achernii\/public_html\/..\/components\/header.php' for inclusion (include_path='.:\/usr\/share\/php7:\/usr\/share\/php7\/PEAR') in \/home\/achernii\/public_html\/signup.php on line 5, referer: http:\/\/10.60.36.1\/~achernii\/signin.php?error=unauthorized&redirect=maintenance.php",
+            "[Tue Nov 11 18:57:42.793896 2025] [php7:warn] [pid 17692] [client 10.212.134.2:55937] PHP Warning:  include(\/home\/achernii\/public_html\/..\/components\/footer.php): failed to open stream: No such file or directory in \/home\/achernii\/public_html\/signup.php on line 63, referer: http:\/\/10.60.36.1\/~achernii\/signin.php?error=unauthorized&redirect=maintenance.php",
+            "[Tue Nov 11 18:57:42.793906 2025] [php7:warn] [pid 17692] [client 10.212.134.2:55937] PHP Warning:  include(): Failed opening '\/home\/achernii\/public_html\/..\/components\/footer.php' for inclusion (include_path='.:\/usr\/share\/php7:\/usr\/share\/php7\/PEAR') in \/home\/achernii\/public_html\/signup.php on line 63, referer: http:\/\/10.60.36.1\/~achernii\/signin.php?error=unauthorized&redirect=maintenance.php",
+            "[Thu Nov 13 19:58:03.385997 2025] [php7:warn] [pid 21464] [client 10.212.134.2:62200] PHP Warning:  include(\/home\/achernii\/public_html\/logger\/logger.php): failed to open stream: Permission denied in \/home\/achernii\/public_html\/index.php on line 1, referer: http:\/\/10.60.36.1\/~achernii\/index.php",
+            "[Thu Nov 13 19:58:03.386027 2025] [php7:warn] [pid 21464] [client 10.212.134.2:62200] PHP Warning:  include(): Failed opening '\/home\/achernii\/public_html\/logger\/logger.php' for inclusion (include_path='.:\/usr\/share\/php7:\/usr\/share\/php7\/PEAR') in \/home\/achernii\/public_html\/index.php on line 1, referer: http:\/\/10.60.36.1\/~achernii\/index.php",
+            "[Thu Nov 13 19:58:06.432802 2025] [php7:warn] [pid 31187] [client 10.212.134.2:53854] PHP Warning:  include(\/home\/achernii\/public_html\/logger\/logger.php): failed to open stream: Permission denied in \/home\/achernii\/public_html\/index.php on line 1, referer: http:\/\/10.60.36.1\/~achernii\/index.php",
+            "[Thu Nov 13 19:58:06.432827 2025] [php7:warn] [pid 31187] [client 10.212.134.2:53854] PHP Warning:  include(): Failed opening '\/home\/achernii\/public_html\/logger\/logger.php' for inclusion (include_path='.:\/usr\/share\/php7:\/usr\/share\/php7\/PEAR') in \/home\/achernii\/public_html\/index.php on line 1, referer: http:\/\/10.60.36.1\/~achernii\/index.php",
+            "[Thu Nov 13 19:58:09.630172 2025] [php7:warn] [pid 26188] [client 10.212.134.2:51415] PHP Warning:  include(\/home\/achernii\/public_html\/logger\/logger.php): failed to open stream: Permission denied in \/home\/achernii\/public_html\/maintenance.php on line 1, referer: http:\/\/10.60.36.1\/~achernii\/index.php",
+            "[Thu Nov 13 19:58:09.630206 2025] [php7:warn] [pid 26188] [client 10.212.134.2:51415] PHP Warning:  include(): Failed opening '\/home\/achernii\/public_html\/logger\/logger.php' for inclusion (include_path='.:\/usr\/share\/php7:\/usr\/share\/php7\/PEAR') in \/home\/achernii\/public_html\/maintenance.php on line 1, referer: http:\/\/10.60.36.1\/~achernii\/index.php",
+            "[Thu Nov 13 19:58:09.637214 2025] [php7:warn] [pid 26188] [client 10.212.134.2:51415] PHP Warning:  include(\/home\/achernii\/public_html\/logger\/logger.php): failed to open stream: Permission denied in \/home\/achernii\/public_html\/signin_page.php on line 1, referer: http:\/\/10.60.36.1\/~achernii\/index.php",
+            "[Thu Nov 13 19:58:09.637226 2025] [php7:warn] [pid 26188] [client 10.212.134.2:51415] PHP Warning:  include(): Failed opening '\/home\/achernii\/public_html\/logger\/logger.php' for inclusion (include_path='.:\/usr\/share\/php7:\/usr\/share\/php7\/PEAR') in \/home\/achernii\/public_html\/signin_page.php on line 1, referer: http:\/\/10.60.36.1\/~achernii\/index.php",
+            "[Thu Nov 13 19:58:11.230450 2025] [php7:warn] [pid 31187] [client 10.212.134.2:53854] PHP Warning:  include(\/home\/achernii\/public_html\/logger\/logger.php): failed to open stream: Permission denied in \/home\/achernii\/public_html\/queries.php on line 1, referer: http:\/\/10.60.36.1\/~achernii\/signin_page.php?error=unauthorized&redirect=maintenance.php",
+            "[Thu Nov 13 19:58:11.230474 2025] [php7:warn] [pid 31187] [client 10.212.134.2:53854] PHP Warning:  include(): Failed opening '\/home\/achernii\/public_html\/logger\/logger.php' for inclusion (include_path='.:\/usr\/share\/php7:\/usr\/share\/php7\/PEAR') in \/home\/achernii\/public_html\/queries.php on line 1, referer: http:\/\/10.60.36.1\/~achernii\/signin_page.php?error=unauthorized&redirect=maintenance.php",
+            "[Thu Nov 13 19:58:12.036792 2025] [php7:warn] [pid 26188] [client 10.212.134.2:51415] PHP Warning:  include(\/home\/achernii\/public_html\/logger\/logger.php): failed to open stream: Permission denied in \/home\/achernii\/public_html\/maintenance.php on line 1, referer: http:\/\/10.60.36.1\/~achernii\/queries.php",
+            "[Thu Nov 13 19:58:12.036816 2025] [php7:warn] [pid 26188] [client 10.212.134.2:51415] PHP Warning:  include(): Failed opening '\/home\/achernii\/public_html\/logger\/logger.php' for inclusion (include_path='.:\/usr\/share\/php7:\/usr\/share\/php7\/PEAR') in \/home\/achernii\/public_html\/maintenance.php on line 1, referer: http:\/\/10.60.36.1\/~achernii\/queries.php",
+            "[Thu Nov 13 19:58:12.044266 2025] [php7:warn] [pid 26188] [client 10.212.134.2:51415] PHP Warning:  include(\/home\/achernii\/public_html\/logger\/logger.php): failed to open stream: Permission denied in \/home\/achernii\/public_html\/signin_page.php on line 1, referer: http:\/\/10.60.36.1\/~achernii\/queries.php",
+            "[Thu Nov 13 19:58:12.044277 2025] [php7:warn] [pid 26188] [client 10.212.134.2:51415] PHP Warning:  include(): Failed opening '\/home\/achernii\/public_html\/logger\/logger.php' for inclusion (include_path='.:\/usr\/share\/php7:\/usr\/share\/php7\/PEAR') in \/home\/achernii\/public_html\/signin_page.php on line 1, referer: http:\/\/10.60.36.1\/~achernii\/queries.php",
+            "[Thu Nov 13 19:58:18.823079 2025] [php7:warn] [pid 31187] [client 10.212.134.2:53854] PHP Warning:  include(\/home\/achernii\/public_html\/logger\/logger.php): failed to open stream: Permission denied in \/home\/achernii\/public_html\/maintenance.php on line 1, referer: http:\/\/10.60.36.1\/~achernii\/signin_page.php?error=unauthorized&redirect=maintenance.php",
+            "[Thu Nov 13 19:58:18.823095 2025] [php7:warn] [pid 31187] [client 10.212.134.2:53854] PHP Warning:  include(): Failed opening '\/home\/achernii\/public_html\/logger\/logger.php' for inclusion (include_path='.:\/usr\/share\/php7:\/usr\/share\/php7\/PEAR') in \/home\/achernii\/public_html\/maintenance.php on line 1, referer: http:\/\/10.60.36.1\/~achernii\/signin_page.php?error=unauthorized&redirect=maintenance.php",
+            "[Thu Nov 13 19:58:24.004188 2025] [php7:warn] [pid 21464] [client 10.212.134.2:62200] PHP Warning:  include(\/home\/achernii\/public_html\/logger\/logger.php): failed to open stream: Permission denied in \/home\/achernii\/public_html\/index.php on line 1, referer: http:\/\/10.60.36.1\/~achernii\/maintenance.php",
+            "[Thu Nov 13 19:58:24.004205 2025] [php7:warn] [pid 21464] [client 10.212.134.2:62200] PHP Warning:  include(): Failed opening '\/home\/achernii\/public_html\/logger\/logger.php' for inclusion (include_path='.:\/usr\/share\/php7:\/usr\/share\/php7\/PEAR') in \/home\/achernii\/public_html\/index.php on line 1, referer: http:\/\/10.60.36.1\/~achernii\/maintenance.php",
+            "[Thu Nov 13 19:59:22.854056 2025] [php7:warn] [pid 18189] [client 10.212.134.2:64727] PHP Warning:  file_put_contents(\/home\/achernii\/public_html\/logger\/error_logs.txt): failed to open stream: Permission denied in \/home\/achernii\/public_html\/logger\/logger.php on line 7, referer: http:\/\/10.60.36.1\/~achernii\/maintenance.php",
+            "[Thu Nov 13 19:59:25.039345 2025] [php7:warn] [pid 1097] [client 10.212.134.2:54277] PHP Warning:  file_put_contents(\/home\/achernii\/public_html\/logger\/error_logs.txt): failed to open stream: Permission denied in \/home\/achernii\/public_html\/logger\/logger.php on line 7, referer: http:\/\/10.60.36.1\/~achernii\/index.php",
+            "[Thu Nov 13 19:59:25.893540 2025] [php7:warn] [pid 18189] [client 10.212.134.2:64727] PHP Warning:  file_put_contents(\/home\/achernii\/public_html\/logger\/error_logs.txt): failed to open stream: Permission denied in \/home\/achernii\/public_html\/logger\/logger.php on line 7, referer: http:\/\/10.60.36.1\/~achernii\/index.php",
+            "[Thu Nov 13 19:59:25.905862 2025] [php7:warn] [pid 18189] [client 10.212.134.2:64727] PHP Warning:  file_put_contents(\/home\/achernii\/public_html\/logger\/error_logs.txt): failed to open stream: Permission denied in \/home\/achernii\/public_html\/logger\/logger.php on line 7, referer: http:\/\/10.60.36.1\/~achernii\/index.php",
+            "[Thu Nov 13 19:59:26.449425 2025] [php7:warn] [pid 17692] [client 10.212.134.2:57017] PHP Warning:  file_put_contents(\/home\/achernii\/public_html\/logger\/error_logs.txt): failed to open stream: Permission denied in \/home\/achernii\/public_html\/logger\/logger.php on line 7, referer: http:\/\/10.60.36.1\/~achernii\/signin_page.php?error=unauthorized&redirect=maintenance.php",
+            "[Thu Nov 13 19:59:27.227617 2025] [php7:warn] [pid 18189] [client 10.212.134.2:64727] PHP Warning:  file_put_contents(\/home\/achernii\/public_html\/logger\/error_logs.txt): failed to open stream: Permission denied in \/home\/achernii\/public_html\/logger\/logger.php on line 7, referer: http:\/\/10.60.36.1\/~achernii\/queries.php",
+            "[Thu Nov 13 19:59:27.263389 2025] [php7:warn] [pid 18189] [client 10.212.134.2:64727] PHP Warning:  file_put_contents(\/home\/achernii\/public_html\/logger\/error_logs.txt): failed to open stream: Permission denied in \/home\/achernii\/public_html\/logger\/logger.php on line 7, referer: http:\/\/10.60.36.1\/~achernii\/queries.php",
+            "[Thu Nov 13 19:59:28.807584 2025] [php7:warn] [pid 1097] [client 10.212.134.2:54277] PHP Warning:  file_put_contents(\/home\/achernii\/public_html\/logger\/error_logs.txt): failed to open stream: Permission denied in \/home\/achernii\/public_html\/logger\/logger.php on line 7, referer: http:\/\/10.60.36.1\/~achernii\/signin_page.php?error=unauthorized&redirect=maintenance.php",
+            "[Thu Nov 13 19:59:51.721854 2025] [php7:warn] [pid 17692] [client 10.212.134.2:57017] PHP Warning:  file_put_contents(\/home\/achernii\/public_html\/logger\/error_logs.txt): failed to open stream: Permission denied in \/home\/achernii\/public_html\/logger\/logger.php on line 7, referer: http:\/\/10.60.36.1\/~achernii\/signin_page.php?error=unauthorized&redirect=maintenance.php",
+            "[Thu Nov 13 20:01:01.651283 2025] [php7:warn] [pid 26188] [client 10.212.134.2:56318] PHP Warning:  file_put_contents(\/home\/achernii\/public_html\/logger\/error_logs.txt): failed to open stream: Permission denied in \/home\/achernii\/public_html\/logger\/logger.php on line 7, referer: http:\/\/10.60.36.1\/~achernii\/index.php",
+            "[Thu Nov 13 20:01:02.876829 2025] [php7:warn] [pid 21464] [client 10.212.134.2:56066] PHP Warning:  file_put_contents(\/home\/achernii\/public_html\/logger\/error_logs.txt): failed to open stream: Permission denied in \/home\/achernii\/public_html\/logger\/logger.php on line 7, referer: http:\/\/10.60.36.1\/~achernii\/imprint.php",
+            "[Thu Nov 13 20:04:27.708110 2025] [php7:error] [pid 1316] [client 10.212.134.2:55298] script '\/home\/achernii\/public_html\/signin.php' not found or unable to stat, referer: http:\/\/10.60.36.1\/~achernii\/signup.php",
+            "[Thu Nov 13 20:04:33.621222 2025] [php7:error] [pid 1316] [client 10.212.134.2:55298] script '\/home\/achernii\/public_html\/signin.php' not found or unable to stat, referer: http:\/\/10.60.36.1\/~achernii\/signup.php",
+            "[Thu Nov 13 23:39:26.283036 2025] [php7:error] [pid 21464] [client 10.212.134.2:64461] script '\/home\/achernii\/public_html\/signin.php' not found or unable to stat, referer: http:\/\/10.60.36.1\/~achernii\/signup.php"
+        ]
+    }
+}
